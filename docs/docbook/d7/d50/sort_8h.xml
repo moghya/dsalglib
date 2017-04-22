@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d50/sort_8h">
+    <title>sort.h File Reference</title>
+    <programlisting>#include &quot;bubblesort.h&quot;</programlisting>
+    <programlisting>#include &quot;heapsort.h&quot;</programlisting>
+    <programlisting>#include &quot;quicksort.h&quot;</programlisting>
+    <programlisting>#include &quot;insertionsort.h&quot;</programlisting>
+    <programlisting>#include &quot;mergesort.h&quot;</programlisting>
+    <programlisting>#include &quot;shellsort.h&quot;</programlisting>
+    <programlisting>#include &quot;selectionsort.h&quot;</programlisting>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/sort.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;10/2/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_SORT_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_SORT_H</emphasis>
+7 
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d6/d43/bubblesort_8h">bubblesort.h</link>&quot;</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d5b/heapsort_8h">heapsort.h</link>&quot;</emphasis>
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d3/de6/quicksort_8h">quicksort.h</link>&quot;</emphasis>
+11 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d1/d08/insertionsort_8h">insertionsort.h</link>&quot;</emphasis>
+12 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d8/d99/mergesort_8h">mergesort.h</link>&quot;</emphasis>
+13 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dd/d2b/shellsort_8h">shellsort.h</link>&quot;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d9/de1/selectionsort_8h">selectionsort.h</link>&quot;</emphasis>
+15 
+16 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_SORT_H</emphasis>
+    </computeroutput></literallayout>
+</section>

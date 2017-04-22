@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/dde/classdsa_1_1graph">
+<title>dsa::graph class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d6/df3/graph_8h">&lt;graph.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="db/d12/structdsa_1_1graph_1_1arc">dsa::graph::arc</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/d72/structdsa_1_1graph_1_1gnode">dsa::graph::gnode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <templateparamlist>
+      <param>
+        <type>class type</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int vindex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>linklist&lt; gnode &gt; nodes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d4/dde/classdsa_1_1graph_1aaf65b15bcff49ebc79709120b665960c">_getindex</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d4/dde/classdsa_1_1graph_1a2b57292cbb05bfe7233e49f36960560b">_getby_vindex</link> (
+long long int tvindex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/dde/classdsa_1_1graph_1acd8aaadec7c95535e2ea5bac2448df3b">graph</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dde/classdsa_1_1graph_1abca01103a01cd13e5a37a11aad821f91">add_vertex</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dde/classdsa_1_1graph_1a166f9f58c2dc96421412f3f690b1d5ab">add_arc</link> (
+type from, type to, long long int weight)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dde/classdsa_1_1graph_1a0c9b4ee260388c64a5a5d4f63f5fbda4">dfstraverse</link> (
+type param, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dde/classdsa_1_1graph_1a07367f1a723dcd03b8dedef9cd770790">bfstraverse</link> (
+type param, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d4/dde/classdsa_1_1graph_1a3b227cd8d51e14e5a53e49db299e601b">remove_vertex</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1aaf65b15bcff49ebc79709120b665960c">
+                <title>long long int dsa::graph&lt; type &gt;::_getindex (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1a2b57292cbb05bfe7233e49f36960560b">
+                <title>long long int dsa::graph&lt; type &gt;::_getby_vindex (long long int tvindex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1acd8aaadec7c95535e2ea5bac2448df3b">
+                <title>dsa::graph&lt; type &gt;::graph ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1abca01103a01cd13e5a37a11aad821f91">
+                <title>bool dsa::graph&lt; type &gt;::add_vertex (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1a166f9f58c2dc96421412f3f690b1d5ab">
+                <title>bool dsa::graph&lt; type &gt;::add_arc (type from, type to, long long int weight=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1a0c9b4ee260388c64a5a5d4f63f5fbda4">
+                <title>bool dsa::graph&lt; type &gt;::dfstraverse (type param, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1a07367f1a723dcd03b8dedef9cd770790">
+                <title>bool dsa::graph&lt; type &gt;::bfstraverse (type param, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/dde/classdsa_1_1graph_1a3b227cd8d51e14e5a53e49db299e601b">
+                <title>bool dsa::graph&lt; type &gt;::remove_vertex (type param)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

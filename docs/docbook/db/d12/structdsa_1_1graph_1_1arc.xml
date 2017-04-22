@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d12/structdsa_1_1graph_1_1arc">
+<title>dsa::graph::arc struct Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int end</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int cost</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d12/structdsa_1_1graph_1_1arc_1a645c001973950a980a86a970162aa651">arc</link> (
+long long int gvertex, long long int weight)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d12/structdsa_1_1graph_1_1arc_1a5a0aa58979cf8b6aca0bb5485ea201d8">arc</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="db/d12/structdsa_1_1graph_1_1arc_1a7f14c6d7c2f4f1cc4cca01394397fb0b">operator==</link> (
+arc temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="db/d12/structdsa_1_1graph_1_1arc_1a645c001973950a980a86a970162aa651">
+                <title>dsa::graph&lt; type &gt;::arc::arc (long long int gvertex, long long int weight)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d12/structdsa_1_1graph_1_1arc_1a5a0aa58979cf8b6aca0bb5485ea201d8">
+                <title>dsa::graph&lt; type &gt;::arc::arc ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="db/d12/structdsa_1_1graph_1_1arc_1a7f14c6d7c2f4f1cc4cca01394397fb0b">
+                <title>bool dsa::graph&lt; type &gt;::arc::operator== (arc temp)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

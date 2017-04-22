@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d1/d08/insertionsort_8h">
+    <title>insertionsort.h File Reference</title>
+    <programlisting>#include &quot;array.h&quot;</programlisting>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d94/namespacedsa">dsa</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/insertionsort.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;12/26/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_INSERTIONSORT_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_INSERTIONSORT_H</emphasis>
+7 
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d63/array_8h">array.h</link>&quot;</emphasis>
+9 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>
+10 {
+11 &#32;&#32;&#32;&#32;<emphasis class="keyword">template</emphasis>&lt;<emphasis class="keyword">typename</emphasis>&#32;type&gt;
+<link linkend="de/d94/namespacedsa_1a41ed7142d1ce6e29e12cdf4456314d53">12 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="de/d94/namespacedsa_1a41ed7142d1ce6e29e12cdf4456314d53">insertionsort</link>(<link linkend="de/db4/classdsa_1_1array">array&lt;type&gt;</link>&#32;arr,<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;size)
+13 &#32;&#32;&#32;&#32;{
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;i,j,var;
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>(i=1;i&lt;size;i++)
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;var&#32;=&#32;arr[i];
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>(j=i-1;j&gt;=0&amp;&amp;var&lt;arr[j];j--)
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;arr[j+1]=arr[j];
+20 
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;arr[j+1]=var;
+22 
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 &#32;&#32;&#32;&#32;}
+25 }
+26 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_INSERTIONSORT_H</emphasis>
+    </computeroutput></literallayout>
+</section>

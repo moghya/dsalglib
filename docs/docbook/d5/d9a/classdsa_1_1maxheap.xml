@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d9a/classdsa_1_1maxheap">
+<title>dsa::maxheap class Reference</title>
+<para>
+    <programlisting>#include <link linkend="da/ddb/heap_8h">&lt;heap.h&gt;</link></programlisting>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>type</declname>
+        <defname>type</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>array&lt; type &gt; objs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d9a/classdsa_1_1maxheap_1a5cec88ba0e86bdaa4e8edb3516bf52d8">_reheapup</link> (
+long long int index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d9a/classdsa_1_1maxheap_1a56dc26fc0a0264ce805ac472912f3cbf">_reheapdown</link> (
+long long index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d9a/classdsa_1_1maxheap_1a5ab0978634c273112f3334c483fc5090">maxheap</link> (
+long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d5/d9a/classdsa_1_1maxheap_1a07861d951779efac1c1293bf41b467d5">popmax</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d5/d9a/classdsa_1_1maxheap_1ae8b94333e590195a61c175de13607564">getmax</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d5/d9a/classdsa_1_1maxheap_1a5ff8a30b34a9041c79eb1da3ada849f4">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d9a/classdsa_1_1maxheap_1adcd0aedb34a2a736d181ec313dba9b74">traverse</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d9a/classdsa_1_1maxheap_1a8610966f5f402078a735f41425e1b88e">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a5cec88ba0e86bdaa4e8edb3516bf52d8">
+                <title>void dsa::maxheap&lt; type &gt;::_reheapup (long long int index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a56dc26fc0a0264ce805ac472912f3cbf">
+                <title>void dsa::maxheap&lt; type &gt;::_reheapdown (long long index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a5ab0978634c273112f3334c483fc5090">
+                <title>dsa::maxheap&lt; type &gt;::maxheap (long long int size=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">
+                <title>bool dsa::maxheap&lt; type &gt;::insert (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a07861d951779efac1c1293bf41b467d5">
+                <title>type dsa::maxheap&lt; type &gt;::popmax ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1ae8b94333e590195a61c175de13607564">
+                <title>type dsa::maxheap&lt; type &gt;::getmax ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a5ff8a30b34a9041c79eb1da3ada849f4">
+                <title>long long int dsa::maxheap&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1adcd0aedb34a2a736d181ec313dba9b74">
+                <title>void dsa::maxheap&lt; type &gt;::traverse (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d9a/classdsa_1_1maxheap_1a8610966f5f402078a735f41425e1b88e">
+                <title>void dsa::maxheap&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

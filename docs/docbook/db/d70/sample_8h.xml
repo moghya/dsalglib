@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d70/sample_8h">
+    <title>sample.h File Reference</title>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link> (
+T obj)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/sample.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;10/1/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_SAMPLE_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_SAMPLE_H</emphasis>
+7 
+8 
+9 <emphasis class="keyword">template</emphasis>&lt;<emphasis class="keyword">typename</emphasis>&#32;T&gt;
+<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">10 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>(T&#32;obj)
+11 {
+12 &#32;&#32;&#32;&#32;std::cout&lt;&lt;obj&lt;&lt;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>;
+13 }
+14 
+15 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_SAMPLE_H</emphasis>
+    </computeroutput></literallayout>
+</section>

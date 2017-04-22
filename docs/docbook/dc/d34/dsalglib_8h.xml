@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d34/dsalglib_8h">
+    <title>dsalglib.h File Reference</title>
+    <programlisting>#include &quot;include/alginc.h&quot;</programlisting>
+    <programlisting>#include &quot;include/linklist.h&quot;</programlisting>
+    <programlisting>#include &quot;include/stack.h&quot;</programlisting>
+    <programlisting>#include &quot;include/array.h&quot;</programlisting>
+    <programlisting>#include &quot;include/search.h&quot;</programlisting>
+    <programlisting>#include &quot;include/sort.h&quot;</programlisting>
+    <programlisting>#include &quot;include/queue.h&quot;</programlisting>
+    <programlisting>#include &quot;include/tree.h&quot;</programlisting>
+    <programlisting>#include &quot;include/heap.h&quot;</programlisting>
+    <programlisting>#include &quot;include/graph.h&quot;</programlisting>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/dsalglib.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;10/1/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_DSALGLIB_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_DSALGLIB_H</emphasis>
+7 
+8 
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d6/dea/alginc_8h">include/alginc.h</link>&quot;</emphasis>
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d36/linklist_8h">include/linklist.h</link>&quot;</emphasis>
+11 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d7/de0/stack_8h">include/stack.h</link>&quot;</emphasis>
+12 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d63/array_8h">include/array.h</link>&quot;</emphasis>
+13 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d9/d85/search_8h">include/search.h</link>&quot;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d7/d50/sort_8h">include/sort.h</link>&quot;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d8/d38/queue_8h">include/queue.h</link>&quot;</emphasis>
+16 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d3/d09/tree_8h">include/tree.h</link>&quot;</emphasis>
+17 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="da/ddb/heap_8h">include/heap.h</link>&quot;</emphasis>
+18 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d6/df3/graph_8h">include/graph.h</link>&quot;</emphasis>
+19 
+20 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_DSALGLIB_H</emphasis>
+    </computeroutput></literallayout>
+</section>

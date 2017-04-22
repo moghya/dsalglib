@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/df4/matrix_8h">
+    <title>matrix.h File Reference</title>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d94/namespacedsa">dsa</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/matrix.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;12/26/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_MATRIX_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_MATRIX_H</emphasis>
+7 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>
+8 {
+9 
+10 
+11 
+12 
+13 
+14 
+15 }
+16 
+17 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_MATRIX_H</emphasis>
+    </computeroutput></literallayout>
+</section>

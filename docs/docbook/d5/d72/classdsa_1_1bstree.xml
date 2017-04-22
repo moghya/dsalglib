@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d72/classdsa_1_1bstree">
+<title>dsa::bstree class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d2/d6c/bstree_8h">&lt;bstree.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="df/d01/structdsa_1_1bstree_1_1bstnode">dsa::bstree::bstnode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>type</declname>
+        <defname>type</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * root</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * <link linkend="d5/d72/classdsa_1_1bstree_1a47a3204ad6c84ba2df00efc081f26678">create_bstnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * <link linkend="d5/d72/classdsa_1_1bstree_1a56baf8296241b47906a0261242132a72">_find_min</link> (
+bstnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * <link linkend="d5/d72/classdsa_1_1bstree_1abefa87ce427036668be761f1cf160ff3">_find_max</link> (
+bstnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d72/classdsa_1_1bstree_1a69e1072d9557f04bc0ca1111284d3a11">_insert</link> (
+bstnode * troot, bstnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * <link linkend="d5/d72/classdsa_1_1bstree_1a51809040863d2c1df2d2ad639d01175f">_remove</link> (
+bstnode * troot, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a11fdaa247f154820ef3b361c32efbde2">_clear</link> (
+bstnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1aef89a83d24d01af5aaeeba5588400e24">_inorder</link> (
+bstnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a782039e9f24b9ac7b7d12f8c79d951a5">_preorder</link> (
+bstnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a8f66a7fe7c1b4ff9d045e9c75eb97fd9">_postorder</link> (
+bstnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1aa6f3bd47564e4ff272994c5bef0a86fd">_levelorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d5/d72/classdsa_1_1bstree_1a8ab10f3820dc2cd483f6134f4d20d2e9">_height</link> (
+bstnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * <link linkend="d5/d72/classdsa_1_1bstree_1a3083955d0964e9f37e098e30b25a9627">_search</link> (
+bstnode * temp, type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d72/classdsa_1_1bstree_1a83b87088098b0903b6eb97ea0be8ca30">bstree</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d5/d72/classdsa_1_1bstree_1a48e586702e417b8dae17351278e9a56f">find_min</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d5/d72/classdsa_1_1bstree_1af6b00c7bf8dd6209fe4b0560ec9478e0">find_max</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d72/classdsa_1_1bstree_1ae54cc88e11be8fc79b117dfa0efab242">remove</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d5/d72/classdsa_1_1bstree_1acb010e3f4af4f31f5c7d6f3257015265">tree_root</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d5/d72/classdsa_1_1bstree_1adf3527b853bd269858aca67e0ca71208">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a3166a35ca4514a6b64250cb7f40e0d5b">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d5/d72/classdsa_1_1bstree_1a1ed2231f4679dbf439a933c3002c6429">height</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d72/classdsa_1_1bstree_1a39022b29fce6529720c30e6e41bd4660">isempty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a1aac4beb85cd798212d72f9cd9a05e32">inorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1aa27955e0a0bc9a3bd88e984a1125ff15">preorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a54aa2ec2a8d2e89b471e5d37bb4d6fad">postorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d5/d72/classdsa_1_1bstree_1a2f78d4a07aa3500b80226ff6d11cb469">levelorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d5/d72/classdsa_1_1bstree_1a04583341f1c423cc043749f4b789f267">search</link> (
+type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a47a3204ad6c84ba2df00efc081f26678">
+                <title>bstnode* dsa::bstree&lt; type &gt;::create_bstnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a56baf8296241b47906a0261242132a72">
+                <title>bstnode* dsa::bstree&lt; type &gt;::_find_min (bstnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1abefa87ce427036668be761f1cf160ff3">
+                <title>bstnode* dsa::bstree&lt; type &gt;::_find_max (bstnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a69e1072d9557f04bc0ca1111284d3a11">
+                <title>bool dsa::bstree&lt; type &gt;::_insert (bstnode *troot, bstnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a51809040863d2c1df2d2ad639d01175f">
+                <title>bstnode* dsa::bstree&lt; type &gt;::_remove (bstnode *troot, type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a11fdaa247f154820ef3b361c32efbde2">
+                <title>void dsa::bstree&lt; type &gt;::_clear (bstnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1aef89a83d24d01af5aaeeba5588400e24">
+                <title>void dsa::bstree&lt; type &gt;::_inorder (bstnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a782039e9f24b9ac7b7d12f8c79d951a5">
+                <title>void dsa::bstree&lt; type &gt;::_preorder (bstnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a8f66a7fe7c1b4ff9d045e9c75eb97fd9">
+                <title>void dsa::bstree&lt; type &gt;::_postorder (bstnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1aa6f3bd47564e4ff272994c5bef0a86fd">
+                <title>void dsa::bstree&lt; type &gt;::_levelorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a8ab10f3820dc2cd483f6134f4d20d2e9">
+                <title>long long int dsa::bstree&lt; type &gt;::_height (bstnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a3083955d0964e9f37e098e30b25a9627">
+                <title>bstnode* dsa::bstree&lt; type &gt;::_search (bstnode *temp, type val)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a83b87088098b0903b6eb97ea0be8ca30">
+                <title>dsa::bstree&lt; type &gt;::bstree ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a48e586702e417b8dae17351278e9a56f">
+                <title>type dsa::bstree&lt; type &gt;::find_min ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1af6b00c7bf8dd6209fe4b0560ec9478e0">
+                <title>type dsa::bstree&lt; type &gt;::find_max ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">
+                <title>bool dsa::bstree&lt; type &gt;::insert (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1ae54cc88e11be8fc79b117dfa0efab242">
+                <title>bool dsa::bstree&lt; type &gt;::remove (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1acb010e3f4af4f31f5c7d6f3257015265">
+                <title>type dsa::bstree&lt; type &gt;::tree_root ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1adf3527b853bd269858aca67e0ca71208">
+                <title>long long int dsa::bstree&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a3166a35ca4514a6b64250cb7f40e0d5b">
+                <title>void dsa::bstree&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a1ed2231f4679dbf439a933c3002c6429">
+                <title>long long int dsa::bstree&lt; type &gt;::height ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a39022b29fce6529720c30e6e41bd4660">
+                <title>bool dsa::bstree&lt; type &gt;::isempty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a1aac4beb85cd798212d72f9cd9a05e32">
+                <title>void dsa::bstree&lt; type &gt;::inorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1aa27955e0a0bc9a3bd88e984a1125ff15">
+                <title>void dsa::bstree&lt; type &gt;::preorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a54aa2ec2a8d2e89b471e5d37bb4d6fad">
+                <title>void dsa::bstree&lt; type &gt;::postorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a2f78d4a07aa3500b80226ff6d11cb469">
+                <title>void dsa::bstree&lt; type &gt;::levelorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d5/d72/classdsa_1_1bstree_1a04583341f1c423cc043749f4b789f267">
+                <title>bool dsa::bstree&lt; type &gt;::search (type val)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

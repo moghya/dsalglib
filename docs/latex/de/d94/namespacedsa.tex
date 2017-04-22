@@ -1,0 +1,278 @@
+\hypertarget{namespacedsa}{}\section{dsa Namespace Reference}
+\label{namespacedsa}\index{dsa@{dsa}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classdsa_1_1array}{array}
+\item 
+class \hyperlink{classdsa_1_1avltree}{avltree}
+\item 
+class \hyperlink{classdsa_1_1bstree}{bstree}
+\item 
+class \hyperlink{classdsa_1_1graph}{graph}
+\item 
+class \hyperlink{classdsa_1_1linklist}{linklist}
+\item 
+class \hyperlink{classdsa_1_1maxheap}{maxheap}
+\item 
+class \hyperlink{classdsa_1_1minheap}{minheap}
+\item 
+class \hyperlink{classdsa_1_1queue}{queue}
+\item 
+class \hyperlink{classdsa_1_1splaytree}{splaytree}
+\item 
+class \hyperlink{classdsa_1_1stack}{stack}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{namespacedsa_adef386c1a6c759a0abe6b51b5059bacf}{swapit} (T \&x, T \&y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacedsa_a679b87e61754a4876290b6c8ee238c9d}{maxof} (T x, T y)
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{namespacedsa_a54888559342933eb2bbd2ecb677049f2}{minof} (T x, T y)
+\item 
+{\footnotesize template$<$typename type $>$ }\\long long int \hyperlink{namespacedsa_a57cd558b7dba2595786b4e06e4e3110a}{binarysearch} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int start, long long int end, type param)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a191cb92b47c09b5d83061967971711a3}{bubblesort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a045a32478e167a6c809a48dce9e67e2d}{\+\_\+reheapup} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ objs, long long int index)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_ac4e7656bc9910c452d4d1fa65a4f7a1e}{\+\_\+reheapdown} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ objs, long long index, long long int last)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a92ab85f4ebb648df70b7c2db6a0405df}{heapsort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a41ed7142d1ce6e29e12cdf4456314d53}{insertionsort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_aa3eb48ff01c3c42ae4a68ca9568c80db}{kmppreprocess} (\hyperlink{classdsa_1_1array}{array}$<$ long long int $>$ pre, \hyperlink{classdsa_1_1array}{array}$<$ type $>$ pat)
+\item 
+{\footnotesize template$<$typename type $>$ }\\\hyperlink{classdsa_1_1array}{array}$<$ long long int $>$ \hyperlink{namespacedsa_ac631850b97fd5d4f9e44bae038d1a4d1}{kmpsearch} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, \hyperlink{classdsa_1_1array}{array}$<$ type $>$ pat)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a54cce1f2ebc3298f3b609e5d500511ec}{merge} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size, long long int start, long long int middle, long long int end)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a053231304c8705306091282b2012fed5}{mergesort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size, long long int start, long long int end)
+\item 
+{\footnotesize template$<$typename type $>$ }\\long long int \hyperlink{namespacedsa_a93d3155d9f866fb7e5d43768e5d114ef}{partition} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int start, long long int end)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_a0d142b52ca481166670c3f7d9946b6e5}{quicksort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int start, long long int end)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_ae14e88094014abbeef1509a14210683d}{selectionsort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size)
+\item 
+{\footnotesize template$<$typename type $>$ }\\void \hyperlink{namespacedsa_ac8246a9c7803dedba0a2531529ac2104}{shellsort} (\hyperlink{classdsa_1_1array}{array}$<$ type $>$ arr, long long int size)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{dsa@{dsa}!\+\_\+reheapdown@{\+\_\+reheapdown}}
+\index{\+\_\+reheapdown@{\+\_\+reheapdown}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{\+\_\+reheapdown(array$<$ type $>$ objs, long long index, long long int last)}{_reheapdown(array< type > objs, long long index, long long int last)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::\+\_\+reheapdown (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{objs, }
+\item[{long long}]{index, }
+\item[{long long int}]{last}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_ac4e7656bc9910c452d4d1fa65a4f7a1e}{}\label{namespacedsa_ac4e7656bc9910c452d4d1fa65a4f7a1e}
+
+
+Definition at line 29 of file heapsort.\+h.
+
+\index{dsa@{dsa}!\+\_\+reheapup@{\+\_\+reheapup}}
+\index{\+\_\+reheapup@{\+\_\+reheapup}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{\+\_\+reheapup(array$<$ type $>$ objs, long long int index)}{_reheapup(array< type > objs, long long int index)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::\+\_\+reheapup (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{objs, }
+\item[{long long int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a045a32478e167a6c809a48dce9e67e2d}{}\label{namespacedsa_a045a32478e167a6c809a48dce9e67e2d}
+
+
+Definition at line 13 of file heapsort.\+h.
+
+\index{dsa@{dsa}!binarysearch@{binarysearch}}
+\index{binarysearch@{binarysearch}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{binarysearch(array$<$ type $>$ arr, long long int start, long long int end, type param)}{binarysearch(array< type > arr, long long int start, long long int end, type param)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ long long int dsa\+::binarysearch (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{start, }
+\item[{long long int}]{end, }
+\item[{type}]{param}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a57cd558b7dba2595786b4e06e4e3110a}{}\label{namespacedsa_a57cd558b7dba2595786b4e06e4e3110a}
+
+
+Definition at line 12 of file binarysearch.\+h.
+
+\index{dsa@{dsa}!bubblesort@{bubblesort}}
+\index{bubblesort@{bubblesort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{bubblesort(array$<$ type $>$ arr, long long int size)}{bubblesort(array< type > arr, long long int size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::bubblesort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a191cb92b47c09b5d83061967971711a3}{}\label{namespacedsa_a191cb92b47c09b5d83061967971711a3}
+
+
+Definition at line 13 of file bubblesort.\+h.
+
+\index{dsa@{dsa}!heapsort@{heapsort}}
+\index{heapsort@{heapsort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{heapsort(array$<$ type $>$ arr)}{heapsort(array< type > arr)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::heapsort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a92ab85f4ebb648df70b7c2db6a0405df}{}\label{namespacedsa_a92ab85f4ebb648df70b7c2db6a0405df}
+
+
+Definition at line 54 of file heapsort.\+h.
+
+\index{dsa@{dsa}!insertionsort@{insertionsort}}
+\index{insertionsort@{insertionsort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{insertionsort(array$<$ type $>$ arr, long long int size)}{insertionsort(array< type > arr, long long int size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::insertionsort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a41ed7142d1ce6e29e12cdf4456314d53}{}\label{namespacedsa_a41ed7142d1ce6e29e12cdf4456314d53}
+
+
+Definition at line 12 of file insertionsort.\+h.
+
+\index{dsa@{dsa}!kmppreprocess@{kmppreprocess}}
+\index{kmppreprocess@{kmppreprocess}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{kmppreprocess(array$<$ long long int $>$ pre, array$<$ type $>$ pat)}{kmppreprocess(array< long long int > pre, array< type > pat)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::kmppreprocess (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ long long int $>$}]{pre, }
+\item[{{\bf array}$<$ type $>$}]{pat}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_aa3eb48ff01c3c42ae4a68ca9568c80db}{}\label{namespacedsa_aa3eb48ff01c3c42ae4a68ca9568c80db}
+
+
+Definition at line 13 of file kmpsearch.\+h.
+
+\index{dsa@{dsa}!kmpsearch@{kmpsearch}}
+\index{kmpsearch@{kmpsearch}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{kmpsearch(array$<$ type $>$ arr, array$<$ type $>$ pat)}{kmpsearch(array< type > arr, array< type > pat)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ {\bf array}$<$long long int$>$ dsa\+::kmpsearch (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{{\bf array}$<$ type $>$}]{pat}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_ac631850b97fd5d4f9e44bae038d1a4d1}{}\label{namespacedsa_ac631850b97fd5d4f9e44bae038d1a4d1}
+
+
+Definition at line 34 of file kmpsearch.\+h.
+
+\index{dsa@{dsa}!maxof@{maxof}}
+\index{maxof@{maxof}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{maxof(\+T x, T y)}{maxof(T x, T y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T dsa\+::maxof (
+\begin{DoxyParamCaption}
+\item[{T}]{x, }
+\item[{T}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacedsa_a679b87e61754a4876290b6c8ee238c9d}{}\label{namespacedsa_a679b87e61754a4876290b6c8ee238c9d}
+
+
+Definition at line 25 of file alginc.\+h.
+
+\index{dsa@{dsa}!merge@{merge}}
+\index{merge@{merge}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{merge(array$<$ type $>$ arr, long long int size, long long int start, long long int middle, long long int end)}{merge(array< type > arr, long long int size, long long int start, long long int middle, long long int end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::merge (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size, }
+\item[{long long int}]{start, }
+\item[{long long int}]{middle, }
+\item[{long long int}]{end}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a54cce1f2ebc3298f3b609e5d500511ec}{}\label{namespacedsa_a54cce1f2ebc3298f3b609e5d500511ec}
+
+
+Definition at line 12 of file mergesort.\+h.
+
+\index{dsa@{dsa}!mergesort@{mergesort}}
+\index{mergesort@{mergesort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{mergesort(array$<$ type $>$ arr, long long int size, long long int start, long long int end)}{mergesort(array< type > arr, long long int size, long long int start, long long int end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::mergesort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size, }
+\item[{long long int}]{start, }
+\item[{long long int}]{end}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a053231304c8705306091282b2012fed5}{}\label{namespacedsa_a053231304c8705306091282b2012fed5}
+
+
+Definition at line 46 of file mergesort.\+h.
+
+\index{dsa@{dsa}!minof@{minof}}
+\index{minof@{minof}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{minof(\+T x, T y)}{minof(T x, T y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T dsa\+::minof (
+\begin{DoxyParamCaption}
+\item[{T}]{x, }
+\item[{T}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacedsa_a54888559342933eb2bbd2ecb677049f2}{}\label{namespacedsa_a54888559342933eb2bbd2ecb677049f2}
+
+
+Definition at line 33 of file alginc.\+h.
+
+\index{dsa@{dsa}!partition@{partition}}
+\index{partition@{partition}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{partition(array$<$ type $>$ arr, long long int start, long long int end)}{partition(array< type > arr, long long int start, long long int end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ long long int dsa\+::partition (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{start, }
+\item[{long long int}]{end}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a93d3155d9f866fb7e5d43768e5d114ef}{}\label{namespacedsa_a93d3155d9f866fb7e5d43768e5d114ef}
+
+
+Definition at line 13 of file quicksort.\+h.
+
+\index{dsa@{dsa}!quicksort@{quicksort}}
+\index{quicksort@{quicksort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{quicksort(array$<$ type $>$ arr, long long int start, long long int end)}{quicksort(array< type > arr, long long int start, long long int end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::quicksort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{start, }
+\item[{long long int}]{end}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_a0d142b52ca481166670c3f7d9946b6e5}{}\label{namespacedsa_a0d142b52ca481166670c3f7d9946b6e5}
+
+
+Definition at line 31 of file quicksort.\+h.
+
+\index{dsa@{dsa}!selectionsort@{selectionsort}}
+\index{selectionsort@{selectionsort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{selectionsort(array$<$ type $>$ arr, long long int size)}{selectionsort(array< type > arr, long long int size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::selectionsort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_ae14e88094014abbeef1509a14210683d}{}\label{namespacedsa_ae14e88094014abbeef1509a14210683d}
+
+
+Definition at line 13 of file selectionsort.\+h.
+
+\index{dsa@{dsa}!shellsort@{shellsort}}
+\index{shellsort@{shellsort}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{shellsort(array$<$ type $>$ arr, long long int size)}{shellsort(array< type > arr, long long int size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ void dsa\+::shellsort (
+\begin{DoxyParamCaption}
+\item[{{\bf array}$<$ type $>$}]{arr, }
+\item[{long long int}]{size}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacedsa_ac8246a9c7803dedba0a2531529ac2104}{}\label{namespacedsa_ac8246a9c7803dedba0a2531529ac2104}
+
+
+Definition at line 12 of file shellsort.\+h.
+
+\index{dsa@{dsa}!swapit@{swapit}}
+\index{swapit@{swapit}!dsa@{dsa}}
+\subsubsection[{\texorpdfstring{swapit(\+T \&x, T \&y)}{swapit(T &x, T &y)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void dsa\+::swapit (
+\begin{DoxyParamCaption}
+\item[{T \&}]{x, }
+\item[{T \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacedsa_adef386c1a6c759a0abe6b51b5059bacf}{}\label{namespacedsa_adef386c1a6c759a0abe6b51b5059bacf}
+
+
+Definition at line 17 of file alginc.\+h.
+

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d0a/main_8cpp">
+    <title>main.cpp File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;dsalglib.h&quot;</programlisting>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/dcc/namespacestd">std</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/main.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+2 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dc/d34/dsalglib_8h">dsalglib.h</link>&quot;</emphasis>
+3 
+4 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="d8/dcc/namespacestd">std</link>;
+5 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>;
+<link linkend="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">6 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="df/d0a/main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link>()&#32;{
+7 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;0;
+8 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/de1/selectionsort_8h">
+    <title>selectionsort.h File Reference</title>
+    <programlisting>#include &quot;array.h&quot;</programlisting>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d94/namespacedsa">dsa</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/selectionsort.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;12/26/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_SELECTIONSORT_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_SELECTIONSORT_H</emphasis>
+7 
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d63/array_8h">array.h</link>&quot;</emphasis>
+9 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>
+10 {
+11 
+12 &#32;&#32;&#32;&#32;<emphasis class="keyword">template</emphasis>&lt;<emphasis class="keyword">typename</emphasis>&#32;type&gt;
+<link linkend="de/d94/namespacedsa_1ae14e88094014abbeef1509a14210683d">13 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="de/d94/namespacedsa_1ae14e88094014abbeef1509a14210683d">selectionsort</link>(<link linkend="de/db4/classdsa_1_1array">array&lt;type&gt;</link>&#32;arr,<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;size)
+14 &#32;&#32;&#32;&#32;{
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;i,j,k,min;
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>(i=0;i&lt;size;i++)
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min&#32;=&#32;i;
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>(j=i+1;j&lt;size;j++)
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(arr[j]&lt;arr[min])
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min&#32;=&#32;j;
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+24 
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1adef386c1a6c759a0abe6b51b5059bacf">swapit</link>(arr[i],arr[min]);
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+27 &#32;&#32;&#32;&#32;}
+28 
+29 }
+30 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_SELECTIONSORT_H</emphasis>
+    </computeroutput></literallayout>
+</section>

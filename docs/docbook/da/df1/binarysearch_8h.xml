@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/df1/binarysearch_8h">
+    <title>binarysearch.h File Reference</title>
+    <programlisting>#include &quot;array.h&quot;</programlisting>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/d94/namespacedsa">dsa</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/binarysearch.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;10/2/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_BINARYSEARCH_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_BINARYSEARCH_H</emphasis>
+7 
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d63/array_8h">array.h</link>&quot;</emphasis>
+9 <emphasis class="keyword">namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>
+10 {
+11 &#32;&#32;&#32;&#32;<emphasis class="keyword">template</emphasis>&lt;<emphasis class="keyword">typename</emphasis>&#32;type&gt;
+<link linkend="de/d94/namespacedsa_1a57cd558b7dba2595786b4e06e4e3110a">12 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="de/d94/namespacedsa_1a57cd558b7dba2595786b4e06e4e3110a">binarysearch</link>(&#32;<link linkend="de/db4/classdsa_1_1array">array&lt;type&gt;</link>&#32;arr,<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;start,<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;end,type&#32;param)
+13 &#32;&#32;&#32;&#32;{
+14 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(start&lt;=end)
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+16 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">long</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;mid=(start+end)/2;
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(arr[mid]&lt;param)
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="de/d94/namespacedsa_1a57cd558b7dba2595786b4e06e4e3110a">binarysearch</link>(arr,mid+1,end,param);
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(param&lt;arr[mid])
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="de/d94/namespacedsa_1a57cd558b7dba2595786b4e06e4e3110a">binarysearch</link>(arr,start,mid-1,param);
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;mid;
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;-1;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+29 &#32;&#32;&#32;&#32;}
+30 }
+31 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_BINARYSEARCH_H</emphasis>
+    </computeroutput></literallayout>
+</section>

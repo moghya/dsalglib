@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d94/namespacedsa">
+<title>dsa</title>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="de/db4/classdsa_1_1array">dsa::array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d7/de3/classdsa_1_1avltree">dsa::avltree</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d72/classdsa_1_1bstree">dsa::bstree</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/dde/classdsa_1_1graph">dsa::graph</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d1/dea/classdsa_1_1linklist">dsa::linklist</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d5/d9a/classdsa_1_1maxheap">dsa::maxheap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d86/classdsa_1_1minheap">dsa::minheap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="dc/d3c/classdsa_1_1queue">dsa::queue</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d8/de3/classdsa_1_1splaytree">dsa::splaytree</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="da/d97/classdsa_1_1stack">dsa::stack</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1adef386c1a6c759a0abe6b51b5059bacf">swapit</link> (
+T &amp; x, T &amp; y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="de/d94/namespacedsa_1a679b87e61754a4876290b6c8ee238c9d">maxof</link> (
+T x, T y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>T <link linkend="de/d94/namespacedsa_1a54888559342933eb2bbd2ecb677049f2">minof</link> (
+T x, T y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="de/d94/namespacedsa_1a57cd558b7dba2595786b4e06e4e3110a">binarysearch</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int start, long long int end, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a191cb92b47c09b5d83061967971711a3">bubblesort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a045a32478e167a6c809a48dce9e67e2d">_reheapup</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; objs, long long int index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1ac4e7656bc9910c452d4d1fa65a4f7a1e">_reheapdown</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; objs, long long index, long long int last)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a92ab85f4ebb648df70b7c2db6a0405df">heapsort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a41ed7142d1ce6e29e12cdf4456314d53">insertionsort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1aa3eb48ff01c3c42ae4a68ca9568c80db">kmppreprocess</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; long long int &gt; pre, <link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; pat)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="de/db4/classdsa_1_1array">array</link>&lt; long long int &gt; <link linkend="de/d94/namespacedsa_1ac631850b97fd5d4f9e44bae038d1a4d1">kmpsearch</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, <link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; pat)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a54cce1f2ebc3298f3b609e5d500511ec">merge</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size, long long int start, long long int middle, long long int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a053231304c8705306091282b2012fed5">mergesort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size, long long int start, long long int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="de/d94/namespacedsa_1a93d3155d9f866fb7e5d43768e5d114ef">partition</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int start, long long int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1a0d142b52ca481166670c3f7d9946b6e5">quicksort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int start, long long int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1ae14e88094014abbeef1509a14210683d">selectionsort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/d94/namespacedsa_1ac8246a9c7803dedba0a2531529ac2104">shellsort</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; arr, long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

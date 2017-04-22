@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d01/structdsa_1_1bstree_1_1bstnode">
+<title>dsa::bstree::bstnode struct Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bstnode * right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d01/structdsa_1_1bstree_1_1bstnode_1a900e13a1547b27821c9425a6eda4b304">bstnode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d01/structdsa_1_1bstree_1_1bstnode_1abcc07362ab6f893db4bffb1acb4edf72">bstnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="df/d01/structdsa_1_1bstree_1_1bstnode_1a900e13a1547b27821c9425a6eda4b304">
+                <title>dsa::bstree&lt; type &gt;::bstnode::bstnode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="df/d01/structdsa_1_1bstree_1_1bstnode_1abcc07362ab6f893db4bffb1acb4edf72">
+                <title>dsa::bstree&lt; type &gt;::bstnode::bstnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d6a/structdsa_1_1queue_1_1qnode">
+<title>dsa::queue::qnode struct Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qnode * next</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d6a/structdsa_1_1queue_1_1qnode_1ab94fec4087a66ae5188a80d2330d6af6">qnode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d6a/structdsa_1_1queue_1_1qnode_1ae3a7241c38c5d6dbfffb7febad483929">qnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d9/d6a/structdsa_1_1queue_1_1qnode_1ab94fec4087a66ae5188a80d2330d6af6">
+                <title>dsa::queue&lt; type &gt;::qnode::qnode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d9/d6a/structdsa_1_1queue_1_1qnode_1ae3a7241c38c5d6dbfffb7febad483929">
+                <title>dsa::queue&lt; type &gt;::qnode::qnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

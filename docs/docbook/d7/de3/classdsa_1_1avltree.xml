@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/de3/classdsa_1_1avltree">
+<title>dsa::avltree class Reference</title>
+<para>
+    <programlisting>#include <link linkend="df/d5a/avltree_8h">&lt;avltree.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d6/d27/structdsa_1_1avltree_1_1avltnode">dsa::avltree::avltnode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>type</declname>
+        <defname>type</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static const long long int IF</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * root</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1a2e001a7ce3c5388ecd9b8267a531b994">create_avltnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d7/de3/classdsa_1_1avltree_1a430ad83d8b940fb3dcde164cc236247e">_height</link> (
+avltnode * troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1aa1a32cd4ed4122f25d2791b111ceded6">_rotateR</link> (
+avltnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1ab4f692cb5cf9aff81923bfcaf9223d55">_rotateL</link> (
+avltnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1ad7cecb18f551a21c030ab41e8d90b36c">_drotateR</link> (
+avltnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a74123c699749a2cc47538ef48baa8841">_drotateL</link> (
+avltnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1af8727ed70090bde3bf0fdf347a90b44a">_balance</link> (
+avltnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1a326929ad7b5e08c16cf64afd8241970e">_insert</link> (
+avltnode * troot, avltnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1adaadb81186fe95fa4defc879a5552c14">_find_min</link> (
+avltnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1ab7c804fc055b08d7c8c1a2b943acb727">_find_max</link> (
+avltnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1a9b6bdc0ae3ccc98c0d382f8639986aaa">_remove</link> (
+avltnode * troot, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a771c14f18305096607f89bb1614794e1">_preorder</link> (
+avltnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a479eadaedca201994068f34b86c80051">_postorder</link> (
+avltnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1aefa854a78a710828ba62482266581e57">_inorder</link> (
+avltnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a2fe4845c964c7a09c71e09c594f573fa">_levelorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>avltnode * <link linkend="d7/de3/classdsa_1_1avltree_1a3ead1dc9b3ef7f818712a1ab6abcdbef">_search</link> (
+avltnode * temp, type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1ac820c58d6e32e2d343b17b7d9df8fbd6">_clear</link> (
+avltnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/de3/classdsa_1_1avltree_1a10f51ac92b73ff9aab1d4f45c8c11b62">avltree</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/de3/classdsa_1_1avltree_1a03a92b3dda2de7ec12df47991d0fa9a8">remove</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1aea5e257512f23ac333157971c453de5f">preorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1afee1fb6e6a1cae480fd2e137c3dc7b49">postorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a844836a7a954012f4b1bcf06df0216f6">inorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a0e22ff38e8d4bb79a87b741c866265ad">levelorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d7/de3/classdsa_1_1avltree_1a801a0e944240b9d81e0b7740c28497a2">find_min</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d7/de3/classdsa_1_1avltree_1aa170008a1add4f68d635a59dc24a54ca">find_max</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d7/de3/classdsa_1_1avltree_1a8765b9d058a0121f8849ce2d291cb0b0">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d7/de3/classdsa_1_1avltree_1ac05be211017bd9d3e8b4bf41209827ef">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d7/de3/classdsa_1_1avltree_1a77dcf1194d7ca69fd46d9c2b893ca458">height</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/de3/classdsa_1_1avltree_1ad2961acd22cdf2f68902de075cac05a6">isempty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d7/de3/classdsa_1_1avltree_1a9182a53d01531f96f0e63bea162c5d11">tree_root</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d7/de3/classdsa_1_1avltree_1aa56520d21d8abf3eaf67acb8ddd9c981">search</link> (
+type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a2e001a7ce3c5388ecd9b8267a531b994">
+                <title>avltnode* dsa::avltree&lt; type &gt;::create_avltnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a430ad83d8b940fb3dcde164cc236247e">
+                <title>long long int dsa::avltree&lt; type &gt;::_height (avltnode *troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1aa1a32cd4ed4122f25d2791b111ceded6">
+                <title>void dsa::avltree&lt; type &gt;::_rotateR (avltnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ab4f692cb5cf9aff81923bfcaf9223d55">
+                <title>void dsa::avltree&lt; type &gt;::_rotateL (avltnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ad7cecb18f551a21c030ab41e8d90b36c">
+                <title>void dsa::avltree&lt; type &gt;::_drotateR (avltnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a74123c699749a2cc47538ef48baa8841">
+                <title>void dsa::avltree&lt; type &gt;::_drotateL (avltnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1af8727ed70090bde3bf0fdf347a90b44a">
+                <title>void dsa::avltree&lt; type &gt;::_balance (avltnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a326929ad7b5e08c16cf64afd8241970e">
+                <title>avltnode* dsa::avltree&lt; type &gt;::_insert (avltnode *troot, avltnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1adaadb81186fe95fa4defc879a5552c14">
+                <title>avltnode* dsa::avltree&lt; type &gt;::_find_min (avltnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ab7c804fc055b08d7c8c1a2b943acb727">
+                <title>avltnode* dsa::avltree&lt; type &gt;::_find_max (avltnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a9b6bdc0ae3ccc98c0d382f8639986aaa">
+                <title>avltnode* dsa::avltree&lt; type &gt;::_remove (avltnode *troot, type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a771c14f18305096607f89bb1614794e1">
+                <title>void dsa::avltree&lt; type &gt;::_preorder (avltnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a479eadaedca201994068f34b86c80051">
+                <title>void dsa::avltree&lt; type &gt;::_postorder (avltnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1aefa854a78a710828ba62482266581e57">
+                <title>void dsa::avltree&lt; type &gt;::_inorder (avltnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a2fe4845c964c7a09c71e09c594f573fa">
+                <title>void dsa::avltree&lt; type &gt;::_levelorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a3ead1dc9b3ef7f818712a1ab6abcdbef">
+                <title>avltnode* dsa::avltree&lt; type &gt;::_search (avltnode *temp, type val)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ac820c58d6e32e2d343b17b7d9df8fbd6">
+                <title>void dsa::avltree&lt; type &gt;::_clear (avltnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a10f51ac92b73ff9aab1d4f45c8c11b62">
+                <title>dsa::avltree&lt; type &gt;::avltree ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">
+                <title>bool dsa::avltree&lt; type &gt;::insert (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a03a92b3dda2de7ec12df47991d0fa9a8">
+                <title>bool dsa::avltree&lt; type &gt;::remove (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1aea5e257512f23ac333157971c453de5f">
+                <title>void dsa::avltree&lt; type &gt;::preorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1afee1fb6e6a1cae480fd2e137c3dc7b49">
+                <title>void dsa::avltree&lt; type &gt;::postorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a844836a7a954012f4b1bcf06df0216f6">
+                <title>void dsa::avltree&lt; type &gt;::inorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a0e22ff38e8d4bb79a87b741c866265ad">
+                <title>void dsa::avltree&lt; type &gt;::levelorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a801a0e944240b9d81e0b7740c28497a2">
+                <title>type dsa::avltree&lt; type &gt;::find_min ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1aa170008a1add4f68d635a59dc24a54ca">
+                <title>type dsa::avltree&lt; type &gt;::find_max ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a8765b9d058a0121f8849ce2d291cb0b0">
+                <title>void dsa::avltree&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ac05be211017bd9d3e8b4bf41209827ef">
+                <title>long long int dsa::avltree&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a77dcf1194d7ca69fd46d9c2b893ca458">
+                <title>long long int dsa::avltree&lt; type &gt;::height ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1ad2961acd22cdf2f68902de075cac05a6">
+                <title>bool dsa::avltree&lt; type &gt;::isempty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1a9182a53d01531f96f0e63bea162c5d11">
+                <title>type dsa::avltree&lt; type &gt;::tree_root ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d7/de3/classdsa_1_1avltree_1aa56520d21d8abf3eaf67acb8ddd9c981">
+                <title>bool dsa::avltree&lt; type &gt;::search (type val)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

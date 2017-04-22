@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>dsalglib</title>
+    </info>
+    <chapter>
+        <title>Namespace Documentation</title>
+        <xi:include href="de/d94/namespacedsa.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d8/dcc/namespacestd.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="db/d12/structdsa_1_1graph_1_1arc.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="de/db4/classdsa_1_1array.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d6/d27/structdsa_1_1avltree_1_1avltnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d7/de3/classdsa_1_1avltree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="df/d01/structdsa_1_1bstree_1_1bstnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d5/d72/classdsa_1_1bstree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d4/d72/structdsa_1_1graph_1_1gnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d4/dde/classdsa_1_1graph.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d1/dea/classdsa_1_1linklist.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="db/d4f/structdsa_1_1linklist_1_1lnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d5/d9a/classdsa_1_1maxheap.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dc/d86/classdsa_1_1minheap.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d9/d6a/structdsa_1_1queue_1_1qnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dc/d3c/classdsa_1_1queue.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d8/dc1/structdsa_1_1stack_1_1snode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d4/ddd/structdsa_1_1splaytree_1_1splaytnode.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d8/de3/classdsa_1_1splaytree.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="da/d97/classdsa_1_1stack.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="dc/d34/dsalglib_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d6/dea/alginc_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="db/d63/array_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="df/d5a/avltree_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="da/df1/binarysearch_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d2/d6c/bstree_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d6/d43/bubblesort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d6/df3/graph_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="da/ddb/heap_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="db/d5b/heapsort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d1/d08/insertionsort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="da/def/kmpsearch_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d2/d36/linklist_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dd/df4/matrix_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d8/d99/mergesort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d8/d38/queue_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d3/de6/quicksort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d9/d85/search_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d9/de1/selectionsort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dd/d2b/shellsort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d7/d50/sort_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dc/dc7/splaytree_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d7/de0/stack_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d3/d09/tree_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="df/d0a/main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="db/d70/sample_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="dc/d20/tests_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="d6/d4c/timepass_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

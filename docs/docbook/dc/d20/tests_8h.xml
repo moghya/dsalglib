@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d20/tests_8h">
+    <title>tests.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &quot;dsalglib.h&quot;</programlisting>
+    <programlisting>#include &quot;sample.h&quot;</programlisting>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1aa76247d5d2b5e20c670112e7160de65d">kmpsearchTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1ae34acbb871bc28376261bff647218768">maxheapTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1a95bedbb12abb442f8fdf2e89a66e73f7">avltreeTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1ad33e8501e8816d9cbb62348aa59b381f">bstreeTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1ae0f49a87473e0b9fb5547a9337d1dd43">stackTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1aeb9f3b127fc3450ffb371d30d6aa5891">arrayTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1aea937881ad69a4e886268a5f5a19e1fd">linklistTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1a4c08b5e7a03f441fd66b7ea02793dc80">queueTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d20/tests_8h_1a5ab4f3c4aec51d819c52f64b687e6d47">sortTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/tests.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;12/25/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_TESTS_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_TESTS_H</emphasis>
+7 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dc/d34/dsalglib_8h">dsalglib.h</link>&quot;</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="db/d70/sample_8h">sample.h</link>&quot;</emphasis>
+10 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="d8/dcc/namespacestd">std</link>;
+11 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="de/d94/namespacedsa">dsa</link>;
+12 
+13 
+<link linkend="dc/d20/tests_8h_1aa76247d5d2b5e20c670112e7160de65d">14 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1aa76247d5d2b5e20c670112e7160de65d">kmpsearchTest</link>()
+15 {
+16 &#32;&#32;&#32;&#32;<link linkend="de/db4/classdsa_1_1array">array&lt;int&gt;</link>&#32;a,b;
+17 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+18 
+19 
+20 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+21 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+22 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+23 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+24 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+25 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+26 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+27 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+28 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+29 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+30 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+31 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+32 
+33 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1ac631850b97fd5d4f9e44bae038d1a4d1">kmpsearch</link>(b,a).traverse(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+34 
+35 
+36 
+37 
+38 }
+39 
+<link linkend="dc/d20/tests_8h_1ae34acbb871bc28376261bff647218768">40 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1ae34acbb871bc28376261bff647218768">maxheapTest</link>()
+41 {
+42 &#32;&#32;&#32;&#32;<link linkend="d5/d9a/classdsa_1_1maxheap">maxheap&lt;int&gt;</link>&#32;b;
+43 &#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a5ff8a30b34a9041c79eb1da3ada849f4">size</link>();
+44 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(14);
+45 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(15);
+46 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(5);
+47 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(13);
+48 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(6);
+49 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(11);
+50 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(1);
+51 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(12);
+52 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(7);
+53 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(8);
+54 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(9);
+55 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(10);
+56 &#32;&#32;&#32;&#32;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a13267d50c880ca078348bb70139aa263">insert</link>(16);
+57 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a5ff8a30b34a9041c79eb1da3ada849f4">size</link>()!=0)
+58 &#32;&#32;&#32;&#32;{
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d5/d9a/classdsa_1_1maxheap_1a07861d951779efac1c1293bf41b467d5">popmax</link>()&lt;&lt;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>;
+60 &#32;&#32;&#32;&#32;}
+61 }
+62 
+<link linkend="dc/d20/tests_8h_1a95bedbb12abb442f8fdf2e89a66e73f7">63 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1a95bedbb12abb442f8fdf2e89a66e73f7">avltreeTest</link>()
+64 {
+65 &#32;&#32;&#32;&#32;<link linkend="d7/de3/classdsa_1_1avltree">avltree&lt;int&gt;</link>&#32;b;
+66 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(5);
+67 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(6);
+68 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(7);
+69 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(8);
+70 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(9);
+71 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(10);
+72 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(11);
+73 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(1);
+74 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(12);
+75 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(13);
+76 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(14);
+77 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(15);
+78 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1ae0870d526ce23809197849982201a627">insert</link>(16);
+79 &#32;&#32;&#32;&#32;<emphasis class="comment">//cout&lt;&lt;b.find_max();</emphasis>
+80 &#32;&#32;&#32;&#32;<emphasis class="comment">//b.levelorder(print);</emphasis>
+81 &#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d7/de3/classdsa_1_1avltree_1a77dcf1194d7ca69fd46d9c2b893ca458">height</link>();
+82 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1a03a92b3dda2de7ec12df47991d0fa9a8">remove</link>(b.<link linkend="d7/de3/classdsa_1_1avltree_1aa170008a1add4f68d635a59dc24a54ca">find_max</link>());
+83 &#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d7/de3/classdsa_1_1avltree_1a77dcf1194d7ca69fd46d9c2b893ca458">height</link>();
+84 &#32;&#32;&#32;&#32;b.<link linkend="d7/de3/classdsa_1_1avltree_1a03a92b3dda2de7ec12df47991d0fa9a8">remove</link>(b.<link linkend="d7/de3/classdsa_1_1avltree_1a801a0e944240b9d81e0b7740c28497a2">find_min</link>());
+85 &#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d7/de3/classdsa_1_1avltree_1a77dcf1194d7ca69fd46d9c2b893ca458">height</link>();
+86 }
+87 
+<link linkend="dc/d20/tests_8h_1ad33e8501e8816d9cbb62348aa59b381f">88 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1ad33e8501e8816d9cbb62348aa59b381f">bstreeTest</link>()
+89 {
+90 &#32;&#32;&#32;&#32;<link linkend="d5/d72/classdsa_1_1bstree">bstree&lt;long long int&gt;</link>&#32;b;
+91 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(5);
+92 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(6);
+93 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(7);
+94 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(8);
+95 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(9);
+96 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(10);
+97 &#32;&#32;&#32;&#32;b.<link linkend="d5/d72/classdsa_1_1bstree_1a6589bcbe87e0550aa31584bf80c88e47">insert</link>(11);
+98 &#32;&#32;&#32;&#32;<emphasis class="comment">//cout&lt;&lt;b.find_max();</emphasis>
+99 &#32;&#32;&#32;&#32;<emphasis class="comment">//b.levelorder(print);</emphasis>
+100 &#32;&#32;&#32;&#32;cout&lt;&lt;b.<link linkend="d5/d72/classdsa_1_1bstree_1a1ed2231f4679dbf439a933c3002c6429">height</link>();
+101 
+102 
+103 }
+104 
+<link linkend="dc/d20/tests_8h_1ae0f49a87473e0b9fb5547a9337d1dd43">105 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1ae0f49a87473e0b9fb5547a9337d1dd43">stackTest</link>()
+106 {
+107 &#32;&#32;&#32;&#32;<link linkend="da/d97/classdsa_1_1stack">dsa::stack&lt;int&gt;</link>&#32;s;
+108 &#32;&#32;&#32;&#32;cout&lt;&lt;s.<link linkend="da/d97/classdsa_1_1stack_1a3f9900d00d38e0f71183b434943decc3">size</link>();
+109 &#32;&#32;&#32;&#32;s.<link linkend="da/d97/classdsa_1_1stack_1ac76dca47083750ded2273dbc9d9e234f">push</link>(10);
+110 &#32;&#32;&#32;&#32;cout&lt;&lt;s.<link linkend="da/d97/classdsa_1_1stack_1a737bae803d75d77e314835ade9f3a16b">pop</link>();
+111 &#32;&#32;&#32;&#32;s.<link linkend="da/d97/classdsa_1_1stack_1ac76dca47083750ded2273dbc9d9e234f">push</link>(5);
+112 &#32;&#32;&#32;&#32;cout&lt;&lt;s.<link linkend="da/d97/classdsa_1_1stack_1a2fb58198b837d533bffc2b14fa8e9f3f">top_element</link>();
+113 &#32;&#32;&#32;&#32;s.<link linkend="da/d97/classdsa_1_1stack_1a22c068dac6bdbdf0f0f3767226d7519f">clear</link>();
+114 &#32;&#32;&#32;&#32;cout&lt;&lt;s.<link linkend="da/d97/classdsa_1_1stack_1a3f9900d00d38e0f71183b434943decc3">size</link>();
+115 
+116 
+117 }
+118 
+<link linkend="dc/d20/tests_8h_1aeb9f3b127fc3450ffb371d30d6aa5891">119 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1aeb9f3b127fc3450ffb371d30d6aa5891">arrayTest</link>()
+120 {
+121 &#32;&#32;&#32;&#32;<link linkend="de/db4/classdsa_1_1array">array&lt;int&gt;</link>&#32;a;
+122 &#32;&#32;&#32;&#32;<link linkend="de/db4/classdsa_1_1array">array&lt;int&gt;</link>&#32;b;
+123 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+124 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+125 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+126 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+127 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+128 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+129 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a191cb92b47c09b5d83061967971711a3">bubblesort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>());
+130 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+131 &#32;&#32;&#32;&#32;a[2]=a[5]+1;
+132 &#32;&#32;&#32;&#32;cout&lt;&lt;a[2];
+133 
+134 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1aa912e367b1600571ca73407b1d306634">reverse</link>(0,a.size()-1);
+135 &#32;&#32;&#32;&#32;b=a;
+136 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+137 &#32;&#32;&#32;&#32;a.traverse(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+138 
+139 &#32;&#32;&#32;&#32;b.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+140 &#32;&#32;&#32;&#32;cout&lt;&lt;a.size();
+141 &#32;&#32;&#32;&#32;return&#32;;
+142 }
+143 
+<link linkend="dc/d20/tests_8h_1aea937881ad69a4e886268a5f5a19e1fd">144 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1aea937881ad69a4e886268a5f5a19e1fd">linklistTest</link>()
+145 {
+146 &#32;&#32;&#32;&#32;<link linkend="d1/dea/classdsa_1_1linklist">linklist&lt;char&gt;</link>&#32;l;
+147 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a3ef6c296e9381c244c88e81ded17cae5">add_back</link>(<emphasis class="charliteral">&apos;a&apos;</emphasis>);
+148 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a3ef6c296e9381c244c88e81ded17cae5">add_back</link>(<emphasis class="charliteral">&apos;b&apos;</emphasis>);
+149 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a3ef6c296e9381c244c88e81ded17cae5">add_back</link>(<emphasis class="charliteral">&apos;c&apos;</emphasis>);
+150 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a3ef6c296e9381c244c88e81ded17cae5">add_back</link>(<emphasis class="charliteral">&apos;d&apos;</emphasis>);
+151 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a5635713d959008510a0c7aafc4e1c858">add_front</link>(<emphasis class="charliteral">&apos;e&apos;</emphasis>);
+152 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a678c45e9bc1336b4c6fed86f2e4457b9">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+153 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a1cc5bbb33399fb62c5b4a56f55c91caf">remove</link>(<emphasis class="charliteral">&apos;d&apos;</emphasis>);
+154 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a678c45e9bc1336b4c6fed86f2e4457b9">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+155 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a5620af63cea3feae47f4efe1afae1bb7">remove_at</link>(2);
+156 &#32;&#32;&#32;&#32;l.<link linkend="d1/dea/classdsa_1_1linklist_1a678c45e9bc1336b4c6fed86f2e4457b9">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+157 &#32;&#32;&#32;&#32;return&#32;;
+158 }
+159 
+<link linkend="dc/d20/tests_8h_1a4c08b5e7a03f441fd66b7ea02793dc80">160 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1a4c08b5e7a03f441fd66b7ea02793dc80">queueTest</link>()
+161 {
+162 &#32;&#32;&#32;&#32;<link linkend="dc/d3c/classdsa_1_1queue">dsa::queue&lt;int&gt;</link>&#32;q;
+163 &#32;&#32;&#32;&#32;cout&lt;&lt;q.<link linkend="dc/d3c/classdsa_1_1queue_1aa7daee593691f3faa0588744c911bbba">size</link>();
+164 &#32;&#32;&#32;&#32;q.<link linkend="dc/d3c/classdsa_1_1queue_1af66c3129f96357af900032b83079b20e">enqueue</link>(5);
+165 &#32;&#32;&#32;&#32;q.<link linkend="dc/d3c/classdsa_1_1queue_1af66c3129f96357af900032b83079b20e">enqueue</link>(6);
+166 &#32;&#32;&#32;&#32;q.<link linkend="dc/d3c/classdsa_1_1queue_1af66c3129f96357af900032b83079b20e">enqueue</link>(7);
+167 &#32;&#32;&#32;&#32;cout&lt;&lt;q.<link linkend="dc/d3c/classdsa_1_1queue_1a9d1178866d2b787aa7947619694ae654">front_element</link>();
+168 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(q.<link linkend="dc/d3c/classdsa_1_1queue_1aa7daee593691f3faa0588744c911bbba">size</link>()!=0)
+169 &#32;&#32;&#32;&#32;{
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;cout&lt;&lt;q.<link linkend="dc/d3c/classdsa_1_1queue_1a332155c1b5d709b703302e4300c62157">dequeue</link>()&lt;&lt;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>;
+171 
+172 &#32;&#32;&#32;&#32;}
+173 &#32;&#32;&#32;&#32;cout&lt;&lt;q.<link linkend="dc/d3c/classdsa_1_1queue_1aacb170201d811e7d3329c84334fc6de3">isempty</link>();
+174 &#32;&#32;&#32;&#32;cout&lt;&lt;q.<link linkend="dc/d3c/classdsa_1_1queue_1a0f31a67ad76c1b586fead082e9c5c6fc">rear_element</link>();
+175 
+176 }
+177 
+<link linkend="dc/d20/tests_8h_1a5ab4f3c4aec51d819c52f64b687e6d47">178 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="dc/d20/tests_8h_1a5ab4f3c4aec51d819c52f64b687e6d47">sortTest</link>()
+179 {
+180 &#32;&#32;&#32;&#32;<link linkend="de/db4/classdsa_1_1array">array&lt;int&gt;</link>&#32;a;
+181 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+182 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+183 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+184 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+185 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+186 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+187 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a191cb92b47c09b5d83061967971711a3">bubblesort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>());
+188 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+189 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+190 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+191 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+192 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+193 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+194 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+195 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+196 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a92ab85f4ebb648df70b7c2db6a0405df">heapsort</link>(a);
+197 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+198 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+199 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+200 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+201 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+202 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+203 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+204 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+205 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a0d142b52ca481166670c3f7d9946b6e5">quicksort</link>(a,0,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>()-1);
+206 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+207 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+208 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+209 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+210 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+211 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+212 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+213 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+214 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a41ed7142d1ce6e29e12cdf4456314d53">insertionsort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>());
+215 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+216 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+217 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+218 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+219 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+220 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+221 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+222 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+223 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1a053231304c8705306091282b2012fed5">mergesort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>(),0,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>()-1);
+224 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+225 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+226 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+227 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+228 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+229 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+230 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+231 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+232 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1ac8246a9c7803dedba0a2531529ac2104">shellsort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>());
+233 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+234 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link>();
+235 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(5);
+236 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(2);
+237 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(9);
+238 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(1);
+239 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(7);
+240 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link>(21);
+241 &#32;&#32;&#32;&#32;<link linkend="de/d94/namespacedsa_1ae14e88094014abbeef1509a14210683d">selectionsort</link>(a,a.<link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link>());
+242 &#32;&#32;&#32;&#32;a.<link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link>(<link linkend="db/d70/sample_8h_1a04a5941995301bbfc9e4d0c318783a94">print</link>);
+243 
+244 }
+245 
+246 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_TESTS_H</emphasis>
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d3c/classdsa_1_1queue">
+<title>dsa::queue class Reference</title>
+<para>
+    <programlisting>#include <link linkend="d8/d38/queue_8h">&lt;queue.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d9/d6a/structdsa_1_1queue_1_1qnode">dsa::queue::qnode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>type</declname>
+        <defname>type</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qnode * front</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qnode * rear</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>qnode * <link linkend="dc/d3c/classdsa_1_1queue_1a68283a3e1feb3ea7a90230546c236a1a">create_qnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d3c/classdsa_1_1queue_1af743931a98548dc02b4832e4cc046ae3">queue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="dc/d3c/classdsa_1_1queue_1af66c3129f96357af900032b83079b20e">enqueue</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="dc/d3c/classdsa_1_1queue_1a332155c1b5d709b703302e4300c62157">dequeue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="dc/d3c/classdsa_1_1queue_1a9d1178866d2b787aa7947619694ae654">front_element</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="dc/d3c/classdsa_1_1queue_1a0f31a67ad76c1b586fead082e9c5c6fc">rear_element</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d3c/classdsa_1_1queue_1a981c9ebdbfafccbc2b7a7b1ee6a90445">operator=</link> (
+<link linkend="dc/d3c/classdsa_1_1queue">queue</link>&lt; type &gt; from)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="dc/d3c/classdsa_1_1queue_1aa7daee593691f3faa0588744c911bbba">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="dc/d3c/classdsa_1_1queue_1aacb170201d811e7d3329c84334fc6de3">isempty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="dc/d3c/classdsa_1_1queue_1abf2014a47be40bf2d0ff7803a3c5165b">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1a68283a3e1feb3ea7a90230546c236a1a">
+                <title>qnode* dsa::queue&lt; type &gt;::create_qnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1af743931a98548dc02b4832e4cc046ae3">
+                <title>dsa::queue&lt; type &gt;::queue ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1af66c3129f96357af900032b83079b20e">
+                <title>type dsa::queue&lt; type &gt;::enqueue (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1a332155c1b5d709b703302e4300c62157">
+                <title>type dsa::queue&lt; type &gt;::dequeue ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1a9d1178866d2b787aa7947619694ae654">
+                <title>type dsa::queue&lt; type &gt;::front_element ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1a0f31a67ad76c1b586fead082e9c5c6fc">
+                <title>type dsa::queue&lt; type &gt;::rear_element ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1a981c9ebdbfafccbc2b7a7b1ee6a90445">
+                <title>void dsa::queue&lt; type &gt;::operator= (queue&lt; type &gt; from)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1aa7daee593691f3faa0588744c911bbba">
+                <title>long long int dsa::queue&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1aacb170201d811e7d3329c84334fc6de3">
+                <title>bool dsa::queue&lt; type &gt;::isempty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="dc/d3c/classdsa_1_1queue_1abf2014a47be40bf2d0ff7803a3c5165b">
+                <title>void dsa::queue&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/de3/classdsa_1_1splaytree">
+<title>dsa::splaytree class Reference</title>
+<para>
+    <programlisting>#include <link linkend="dc/dc7/splaytree_8h">&lt;splaytree.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="d4/ddd/structdsa_1_1splaytree_1_1splaytnode">dsa::splaytree::splaytnode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <templateparamlist>
+      <param>
+        <type>class type</type>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * root</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * <link linkend="d8/de3/classdsa_1_1splaytree_1ade383f767b44c7f302e11fc741e52d82">create_splaytnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a5fbb048c3fe30c60b351f96cfd0bdbdd">_rotateR</link> (
+splaytnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a10ed9b1a534fd0fa0b0fe7006e9e0164">_rotateL</link> (
+splaytnode *&amp; troot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a62a2e04274c8b4ba3e58457aca51d707">_splay</link> (
+splaytnode *&amp; troot, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * <link linkend="d8/de3/classdsa_1_1splaytree_1a0c5ed925de39cd8b9831f932d637733d">_find_min</link> (
+splaytnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * <link linkend="d8/de3/classdsa_1_1splaytree_1aa82b19a56a00ead9abcc378e6b383b13">_find_max</link> (
+splaytnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/de3/classdsa_1_1splaytree_1a6a5a005f6d687150bec522913c2e0ff9">_insert</link> (
+splaytnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * <link linkend="d8/de3/classdsa_1_1splaytree_1a9843644a75721a86a9c9d3417ca71635">_remove</link> (
+splaytnode * troot, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a387d7c91d472e1b59c8a51bed3218f0f">_clear</link> (
+splaytnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a22fdc701722085c5d14c9e2c66990c9c">_inorder</link> (
+splaytnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a3fb3c43e3164195d8457174cc477f96e">_preorder</link> (
+splaytnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1ac1cb31cd2f820986115554783024d1ae">_postorder</link> (
+splaytnode * temp, void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a0e7d331a8b958c45093018349694409f">_bfs</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d8/de3/classdsa_1_1splaytree_1af1c23336f6bf483cb5b033e9e03d695a">_height</link> (
+splaytnode * temp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * <link linkend="d8/de3/classdsa_1_1splaytree_1ac489e5bfff40cd4764f47ea4b877cd3c">_search</link> (
+splaytnode * temp, type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/de3/classdsa_1_1splaytree_1a5eac748bc90f4b9ed911212fb861057c">splaytree</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d8/de3/classdsa_1_1splaytree_1a17cb06f5903351a44490312190e46fd1">find_min</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d8/de3/classdsa_1_1splaytree_1aa15b92dd4d3129839c6dc4e10d054f26">find_max</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/de3/classdsa_1_1splaytree_1a93bd47920917dc58eee056fad4b4c8be">insert</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/de3/classdsa_1_1splaytree_1aa5ab68a96a34c21964192b5ba6e45d74">remove</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type <link linkend="d8/de3/classdsa_1_1splaytree_1a08fd5b97c35ca13bc4c21a5ad77ba464">tree_root</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d8/de3/classdsa_1_1splaytree_1a1994f9177f129b3534e64506c39a6cde">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a04d036e1db3fd1d5daf00acd12aa790b">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="d8/de3/classdsa_1_1splaytree_1a1381e4c740c3371e184b75ccd27b618a">height</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/de3/classdsa_1_1splaytree_1a40f0b3c2040161d70865129be7fb33c5">isempty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1abfd1daa0395ad387ccee9fc76f48b45a">inorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a251217acc123c990a5a52aca36a76028">preorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1aab34ce58381a447ccbe1b8370bc2cd0e">postorder</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="d8/de3/classdsa_1_1splaytree_1a119c5ccc2c2e212d65e81c864ff420d3">bfs</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="d8/de3/classdsa_1_1splaytree_1a4e92bfd8b941f3a9956c904df3e2bdf3">search</link> (
+type val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1ade383f767b44c7f302e11fc741e52d82">
+                <title>splaytnode* dsa::splaytree&lt; type &gt;::create_splaytnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a5fbb048c3fe30c60b351f96cfd0bdbdd">
+                <title>void dsa::splaytree&lt; type &gt;::_rotateR (splaytnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a10ed9b1a534fd0fa0b0fe7006e9e0164">
+                <title>void dsa::splaytree&lt; type &gt;::_rotateL (splaytnode *&amp;troot)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a62a2e04274c8b4ba3e58457aca51d707">
+                <title>void dsa::splaytree&lt; type &gt;::_splay (splaytnode *&amp;troot, type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a0c5ed925de39cd8b9831f932d637733d">
+                <title>splaytnode* dsa::splaytree&lt; type &gt;::_find_min (splaytnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1aa82b19a56a00ead9abcc378e6b383b13">
+                <title>splaytnode* dsa::splaytree&lt; type &gt;::_find_max (splaytnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a6a5a005f6d687150bec522913c2e0ff9">
+                <title>bool dsa::splaytree&lt; type &gt;::_insert (splaytnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a9843644a75721a86a9c9d3417ca71635">
+                <title>splaytnode* dsa::splaytree&lt; type &gt;::_remove (splaytnode *troot, type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a387d7c91d472e1b59c8a51bed3218f0f">
+                <title>void dsa::splaytree&lt; type &gt;::_clear (splaytnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a22fdc701722085c5d14c9e2c66990c9c">
+                <title>void dsa::splaytree&lt; type &gt;::_inorder (splaytnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a3fb3c43e3164195d8457174cc477f96e">
+                <title>void dsa::splaytree&lt; type &gt;::_preorder (splaytnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1ac1cb31cd2f820986115554783024d1ae">
+                <title>void dsa::splaytree&lt; type &gt;::_postorder (splaytnode *temp, void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a0e7d331a8b958c45093018349694409f">
+                <title>void dsa::splaytree&lt; type &gt;::_bfs (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1af1c23336f6bf483cb5b033e9e03d695a">
+                <title>long long int dsa::splaytree&lt; type &gt;::_height (splaytnode *temp)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1ac489e5bfff40cd4764f47ea4b877cd3c">
+                <title>splaytnode* dsa::splaytree&lt; type &gt;::_search (splaytnode *temp, type val)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a5eac748bc90f4b9ed911212fb861057c">
+                <title>dsa::splaytree&lt; type &gt;::splaytree ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a17cb06f5903351a44490312190e46fd1">
+                <title>type dsa::splaytree&lt; type &gt;::find_min ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1aa15b92dd4d3129839c6dc4e10d054f26">
+                <title>type dsa::splaytree&lt; type &gt;::find_max ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a93bd47920917dc58eee056fad4b4c8be">
+                <title>bool dsa::splaytree&lt; type &gt;::insert (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1aa5ab68a96a34c21964192b5ba6e45d74">
+                <title>bool dsa::splaytree&lt; type &gt;::remove (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a08fd5b97c35ca13bc4c21a5ad77ba464">
+                <title>type dsa::splaytree&lt; type &gt;::tree_root ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a1994f9177f129b3534e64506c39a6cde">
+                <title>long long int dsa::splaytree&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a04d036e1db3fd1d5daf00acd12aa790b">
+                <title>void dsa::splaytree&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a1381e4c740c3371e184b75ccd27b618a">
+                <title>long long int dsa::splaytree&lt; type &gt;::height ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a40f0b3c2040161d70865129be7fb33c5">
+                <title>bool dsa::splaytree&lt; type &gt;::isempty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1abfd1daa0395ad387ccee9fc76f48b45a">
+                <title>void dsa::splaytree&lt; type &gt;::inorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a251217acc123c990a5a52aca36a76028">
+                <title>void dsa::splaytree&lt; type &gt;::preorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1aab34ce58381a447ccbe1b8370bc2cd0e">
+                <title>void dsa::splaytree&lt; type &gt;::postorder (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a119c5ccc2c2e212d65e81c864ff420d3">
+                <title>void dsa::splaytree&lt; type &gt;::bfs (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d8/de3/classdsa_1_1splaytree_1a4e92bfd8b941f3a9956c904df3e2bdf3">
+                <title>bool dsa::splaytree&lt; type &gt;::search (type val)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

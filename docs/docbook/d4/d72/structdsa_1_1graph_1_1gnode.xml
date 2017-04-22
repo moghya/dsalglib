@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/d72/structdsa_1_1graph_1_1gnode">
+<title>dsa::graph::gnode struct Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int index</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>linklist&lt; arc &gt; outadj</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>linklist&lt; arc &gt; inadj</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d72/structdsa_1_1graph_1_1gnode_1acdafcfbf652bb096e3f5acf8e6773c0c">gnode</link> (
+type param, long long int tindex)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/d72/structdsa_1_1graph_1_1gnode_1ac54e9497ef441c8f9f05fb3422d18e01">gnode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/d72/structdsa_1_1graph_1_1gnode_1acdafcfbf652bb096e3f5acf8e6773c0c">
+                <title>dsa::graph&lt; type &gt;::gnode::gnode (type param, long long int tindex)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/d72/structdsa_1_1graph_1_1gnode_1ac54e9497ef441c8f9f05fb3422d18e01">
+                <title>dsa::graph&lt; type &gt;::gnode::gnode ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

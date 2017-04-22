@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d09/tree_8h">
+    <title>tree.h File Reference</title>
+    <programlisting>#include &quot;avltree.h&quot;</programlisting>
+    <programlisting>#include &quot;bstree.h&quot;</programlisting>
+    <programlisting>#include &quot;splaytree.h&quot;</programlisting>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file C:/Users/moghya_s/Desktop/dsalglib/source/include/tree.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">//</emphasis>
+2 <emphasis class="comment">//&#32;Created&#32;by&#32;moghya_s&#32;on&#32;10/1/2016.</emphasis>
+3 <emphasis class="comment">//</emphasis>
+4 
+5 <emphasis class="preprocessor">#ifndef&#32;DSALGLIB_TREE_H</emphasis>
+6 <emphasis class="preprocessor">#define&#32;DSALGLIB_TREE_H</emphasis>
+7 
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="df/d5a/avltree_8h">avltree.h</link>&quot;</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="d2/d6c/bstree_8h">bstree.h</link>&quot;</emphasis>
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="dc/dc7/splaytree_8h">splaytree.h</link>&quot;</emphasis>
+11 <emphasis class="preprocessor">#endif&#32;//DSALGLIB_TREE_H</emphasis>
+    </computeroutput></literallayout>
+</section>

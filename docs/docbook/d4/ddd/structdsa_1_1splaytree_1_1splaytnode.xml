@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d4/ddd/structdsa_1_1splaytree_1_1splaytnode">
+<title>dsa::splaytree::splaytnode struct Reference</title>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * left</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>splaytnode * right</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type data</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/ddd/structdsa_1_1splaytree_1_1splaytnode_1a369fed673e41d8cfcdbb2b2364b62d95">splaytnode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d4/ddd/structdsa_1_1splaytree_1_1splaytnode_1ae70469c16de36aba4bdfed303fc8432e">splaytnode</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="d4/ddd/structdsa_1_1splaytree_1_1splaytnode_1a369fed673e41d8cfcdbb2b2364b62d95">
+                <title>dsa::splaytree&lt; type &gt;::splaytnode::splaytnode ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="d4/ddd/structdsa_1_1splaytree_1_1splaytnode_1ae70469c16de36aba4bdfed303fc8432e">
+                <title>dsa::splaytree&lt; type &gt;::splaytnode::splaytnode (type param)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

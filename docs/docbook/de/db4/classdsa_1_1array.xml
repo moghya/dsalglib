@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/db4/classdsa_1_1array">
+<title>dsa::array class Reference</title>
+<para>
+    <programlisting>#include <link linkend="db/d63/array_8h">&lt;array.h&gt;</link></programlisting>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>type</declname>
+        <defname>type</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static const long long int spare</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int count</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int capacity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type * objs</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db4/classdsa_1_1array_1a53f3af8220c28e6381d85fb3f30dfeaf">array</link> (
+long long int size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/db4/classdsa_1_1array_1a45a2cce51a4d64340cb0deefdf3a8909">array</link> (
+long long int size, type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1ac07cadd588443d28e57cd1d3702c35cb">resize</link> (
+long long int newsize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>type &amp; <link linkend="de/db4/classdsa_1_1array_1acd9a970794198153c5d69ba4c1fda9ed">operator[]</link> (
+long long int index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1a60c9b1dc365c787dfe2ad5622706c9e3">operator=</link> (
+<link linkend="de/db4/classdsa_1_1array">array</link>&lt; type &gt; from)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">push_back</link> (
+type param)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1ae59edf3a0e2550ae4bc2e618fff62a73">pop_back</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1aa912e367b1600571ca73407b1d306634">reverse</link> (
+long long int start, long long int end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>long long int <link linkend="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">size</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">traverse</link> (
+void(fun)(type obj) )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="de/db4/classdsa_1_1array_1aba7e465a093cca24c292267ebfa1bb3f">isempty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a53f3af8220c28e6381d85fb3f30dfeaf">
+                <title>dsa::array&lt; type &gt;::array (long long int size=0)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a45a2cce51a4d64340cb0deefdf3a8909">
+                <title>dsa::array&lt; type &gt;::array (long long int size, type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1ac07cadd588443d28e57cd1d3702c35cb">
+                <title>void dsa::array&lt; type &gt;::resize (long long int newsize)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1acd9a970794198153c5d69ba4c1fda9ed">
+                <title>type&amp; dsa::array&lt; type &gt;::operator[] (long long int index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a60c9b1dc365c787dfe2ad5622706c9e3">
+                <title>void dsa::array&lt; type &gt;::operator= (array&lt; type &gt; from)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1ade3cfef15d5e6fc60d2fd73b19faeee3">
+                <title>void dsa::array&lt; type &gt;::push_back (type param)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1ae59edf3a0e2550ae4bc2e618fff62a73">
+                <title>void dsa::array&lt; type &gt;::pop_back ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1aa912e367b1600571ca73407b1d306634">
+                <title>void dsa::array&lt; type &gt;::reverse (long long int start, long long int end)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a4fdd4189047c0d953e3d66e91b94c9a7">
+                <title>long long int dsa::array&lt; type &gt;::size ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a08303d09488f8f7c480c310f6e76a115">
+                <title>void dsa::array&lt; type &gt;::traverse (void(fun)(type obj))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1aba7e465a093cca24c292267ebfa1bb3f">
+                <title>bool dsa::array&lt; type &gt;::isempty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="de/db4/classdsa_1_1array_1a496818e8b4604a51e06602e25899ab85">
+                <title>void dsa::array&lt; type &gt;::clear ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>
