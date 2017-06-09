@@ -39,7 +39,12 @@ namespace dsa
             k++;
             i++;
         }        
-        
+        while(j<=middle)
+        {
+            arr[k]=temp[j];
+            k++;
+            j++;
+        }
     }
     
     template<typename type>
