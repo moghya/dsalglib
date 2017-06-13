@@ -12,39 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afb47496-e688-42c7-9b37-abdd99673463" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../dsalglib.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/alginc.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/array.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/avltree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/binarysearch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/bstree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/bubblesort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/graph.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/heap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/heapsort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/insertionsort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/kmpsearch.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/linklist.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/matrix.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/mergesort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/queue.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/quicksort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/search.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/selectionsort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/shellsort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/sort.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/splaytree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/stack.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../include/tree.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../main.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../sample.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../tests.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../timepass.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/dsalglib.iml" afterPath="$PROJECT_DIR$/../.idea/dsalglib.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dsalglib.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,8 +35,8 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="242">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -78,6 +46,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -169,12 +144,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492891540464</updated>
-      <workItem from="1492891542132" duration="88000" />
+      <workItem from="1492891542132" duration="1752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88000" />
+    <option name="totallyTimeSpent" value="1752000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -186,7 +161,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -218,8 +193,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="242">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
