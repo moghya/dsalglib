@@ -7,7 +7,7 @@ Following Data Structures and Algorithms are being implemented here. Please go t
 # Essential Functions:
 
 - [swapit](https://github.com/moghya/dsalglib/blob/master/dsalglib/include/alginc.h)
-- [maxof and minof] (https://github.com/moghya/dsalglib/blob/master/dsalglib/include/alginc.h)
+- [maxof and minof](https://github.com/moghya/dsalglib/blob/master/dsalglib/include/alginc.h)
 
 # Data Structures:
 
