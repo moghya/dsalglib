@@ -19,6 +19,12 @@ Following Data Structures and Algorithms are being implemented here. Please go t
 - [Binary Search Tree](http://moghya.me/dsalglib/d5/d72/classdsa_1_1bstree.html)
 - [AVL Tree](http://moghya.me/dsalglib/d7/de3/classdsa_1_1avltree.html)
 - [Splay Tree](http://moghya.me/dsalglib/d8/de3/classdsa_1_1splaytree.html)
+- Binary Indexed Tree
+- Red Black Tree
+- Segment Tree
+- Hash Table
+- Suffix Tree
+- Suffix Array
 - [Min Heap](http://moghya.me/dsalglib/d5/d9a/classdsa_1_1minheap.html)
 - [Max Heap](http://moghya.me/dsalglib/d5/d9a/classdsa_1_1maxheap.html)
 - [Graph](http://moghya.me/dsalglib/d6/df3/graph_8h.html)
@@ -34,4 +40,5 @@ Following Data Structures and Algorithms are being implemented here. Please go t
 - [Quick Sort](http://moghya.me/dsalglib/de/d94/namespacedsa.html#a0d142b52ca481166670c3f7d9946b6e5)
 - [Heap Sort](http://moghya.me/dsalglib/de/d94/namespacedsa.html#a92ab85f4ebb648df70b7c2db6a0405df)
 - [Merge Sort](http://moghya.me/dsalglib/de/d94/namespacedsa.html#a053231304c8705306091282b2012fed5)
-
+- Number Theory Algorithms
+- 
