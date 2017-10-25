@@ -21,6 +21,12 @@ namespace dsa
                     objs = new type[capacity];
                 }
 
+                // Free may create some memory licks(due to spare elements)
+                ~array()
+                {
+                    delete [] objs;
+                }
+
                 array(long long int size,type param)
                 {
                     count = size;

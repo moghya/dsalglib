@@ -215,6 +215,14 @@ namespace dsa
 
             }
 
+            //deletes the whole linked list.
+            void freeList()
+            {
+                while(count > 0) {
+                    pop_front();
+                }
+            }
+
             /*
              * Function: deletes last lnode from list
              * Pre: none
@@ -349,6 +357,29 @@ namespace dsa
                     temp = temp->next;
                 }
             }
+
+            //update element at index "X" with new value
+            void update(int index, type newData)
+            {
+                 if(index>=0&&index<count)
+                {
+
+                    lnode *temp = start,*another_temp;
+                    long long int counter = 1;
+                    while(counter<index)
+                    {
+                        if(index == counter) {
+                            temp -> data = newData;
+                        }
+                        temp=temp->next;
+                        counter++;
+                    }
+                    return ;
+                }
+                else
+                    return ;
+            }
     };
 }
 #endif //DSALGLIB_LINKLIST_H
+

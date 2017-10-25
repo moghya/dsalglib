@@ -56,7 +56,6 @@ namespace dsa
             }
             gnode()
             {
-
             }
         };
 
@@ -92,6 +91,7 @@ namespace dsa
 
         bool add_vertex(type param)
         {
+            //Node already exist
             if(_getindex(param)>-1)
                 return false;
 
@@ -118,12 +118,13 @@ namespace dsa
             nodes[findex].outadj.add_back(edge);
 
             edge.end = nodes[findex].index;
+
+            //"copy" of edge after modifying end point is passed to add_back.
             nodes[tindex].inadj.add_back(edge);
-
             return true;
-
         }
 
+        //Traverse each node within graph and execute "fun" with "data" in the node as a parameter.
         bool dfstraverse(type param,void (fun)(type obj))
         {
             array<bool> visited(count,false);
@@ -205,6 +206,9 @@ namespace dsa
                 nodes[tvindex].outadj.remove(temparc);
             }
             nodes.remove_at(tindex);
+
+            //Decrementing number of nodes.
+            --count;
             return true;
         }
 

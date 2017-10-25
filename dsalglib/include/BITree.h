@@ -28,8 +28,9 @@ namespace dsa
             }
 
             void add(int i, type val) {
+
                 while( i < vec.size()) {
-                    vec[i] += val;
+                    vec[i] = vec[i] + val;
                     // Expression (i & -i) gives value of 2^(index of LSB in i)
                     i += (i&-i);
 
@@ -37,13 +38,11 @@ namespace dsa
             }
 
             type sum(int i) {
-                // For this to work you must overload the assignment operator of the "type" class.
-                type ans = 0;
+                type ans;
                 while(i > 0) {
-                    ans += vec[i];
+                    ans = ans + vec[i];
                     i -= (i & -i);
                 }
-
                 return ans;
             }
 
