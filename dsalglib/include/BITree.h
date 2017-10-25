@@ -6,8 +6,9 @@
 #ifndef DSALGLIB_BITREE_H
 #define DSALGLIB_BITREE_H
 
-#include<vector>
-using namespace std;
+//Guard header in array.h will prevent itself from including more than once avoiding compilation errors.
+#include "array.h"
+
 namespace dsa
 {
     /*
@@ -16,19 +17,18 @@ namespace dsa
     * video : https://www.youtube.com/watch?v=kPaJfAUwViY
     */
     template<class type>
-    class bitree
+    class BITree
     {
         private:
-            vector<type> vec;
+            array<type> vec;
 
         public:
-            void init(int n) {
-                vec.assign(n, 0);
+            void init(long long int n, type initVal) {
+                vec = array(n, initVal);
             }
 
             void add(int i, type val) {
                 while( i < vec.size()) {
-
                     vec[i] += val;
                     // Expression (i & -i) gives value of 2^(index of LSB in i)
                     i += (i&-i);
@@ -37,7 +37,7 @@ namespace dsa
             }
 
             type sum(int i) {
-
+                // For this to work you must overload the assignment operator of the "type" class.
                 type ans = 0;
                 while(i > 0) {
                     ans += vec[i];
