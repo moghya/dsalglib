@@ -174,6 +174,7 @@ namespace dsa
                     temp->next = start;
                     start->prev = temp;
                     temp->prev = last;
+                    last->next=temp;
                     start = temp;
                 }
                 count++;
