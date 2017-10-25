@@ -117,10 +117,8 @@ namespace dsa {
              * Post: true if isempty else false
              */
             bool isempty() {
-                if (count == 0)
-                    return true;
-                else
-                    return false;
+               
+               return (count == 0);
             }
 
             /*
