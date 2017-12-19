@@ -16,9 +16,9 @@ namespace dsa
     template<typename T>
     inline void swapit(T &x, T &y)
     {
-        T t = x;
-        x = y;
-        y = t;
+      x=x+y;
+      y=x-y;
+      x=x-y;
     }
 
     template<typename T>
