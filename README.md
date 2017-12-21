@@ -2,9 +2,9 @@
 ## No standard library functions and dependencies.
 
 This is improved and stable version of dsalib ready to use C++ data structures and algorithms template library.
-Multiple Data Structures and ALgorithms are implemented in template format.
+Multiple Data Structures and Algorithms are implemented in template format.
 
-Following Data Structures and Algorithms are being implemented here. Please go through the existing implementations and start implenting Data Structure or Algorithm or your choice.
+Following Data Structures and Algorithms are being implemented here. Please go through the existing implementations and start implementing Data Structure or Algorithm or your choice.
 
 # Essential Functions:
 
