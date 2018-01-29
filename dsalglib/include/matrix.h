@@ -7,11 +7,6 @@
 namespace dsa
 {
 
-
-
-
-
-
 }
 
 #endif //DSALGLIB_MATRIX_H

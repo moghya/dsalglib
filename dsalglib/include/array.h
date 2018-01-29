@@ -30,6 +30,8 @@ namespace dsa
                     for(i=0;i<count;i++)
                         objs[i]=param;
                 }
+
+
                 void resize(long long int newsize)
                 {
                     if(newsize<capacity) return ;
@@ -47,12 +49,15 @@ namespace dsa
                     return;
                 }
 
+
                 type &operator[](long long int index)
                 {
                     if(index>=0&&index<count)
                     {
                         return objs[index];
                     }
+
+                    throw "Array index out of bound";
                 }
 
                 void operator=(array<type> from)
