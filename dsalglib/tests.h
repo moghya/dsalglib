@@ -31,10 +31,6 @@ void kmpsearchTest()
     b.push_back(1);
 
     kmpsearch(b,a).traverse(print);
-
-
-
-
 }
 
 void maxheapTest()
