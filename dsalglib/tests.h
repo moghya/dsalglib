@@ -239,4 +239,14 @@ void sortTest()
 
 }
 
+void trie_test(){
+    trie t;
+    t.insert("first");
+    t.insert("second");
+    cout << t.search("first") << "\n";
+    cout << t.search("firs") << "\n";
+    cout << t.search("second") << "\n";
+    cout << t.search("third") << "\n";
+}
+
 #endif //DSALGLIB_TESTS_H

@@ -8,5 +8,6 @@
 #include "avltree.h"
 #include "bstree.h"
 #include "splaytree.h"
+#include "trie.h"
 #endif //DSALGLIB_TREE_H
 
