@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+using namespace std;
+//search index of a key value using jump search;
+int jump_search(int arr[], int len, int key)
+{
+    //length of the segment;
+    int step = sqrt(len);
+    //initial index;
+    int prev_index = 0;
+    //loop will continue untill current value is less than key value;
+    while(arr[min(step, len)-1] < key)
+    {
+        prev_index = step;
+        step = step + sqrt(len);
+        //if current index is greater than equal to length of the array then the key value is absent
+        //the given array;
+        if(prev_index >= len)
+            return -1;
+    }
+    //do linear search starts from current index;
+    while(arr[prev_index] < key)
+    {
+        prev_index++;
+        //if current index is equal to length of the array or ending index of the index then
+        //the element is absent in the array;
+        if(prev_index == min(step, len))
+            return -1;
+    }
+    //if value stored at current index then it will return current index;
+    if(arr[prev_index] == key)
+        return prev_index;
+    return -1;
+}
+int main()
+{
+    int arr[] = {10,12,15,18,20,25,36,40,45,56,85};
+    int initial_index = 0;
+    //size of the sorted array; 
+    int len = sizeof(arr);
+    //key value that have to search;
+    int key;
+    cin>>key;
+    //'idx' give index of the key value if it is present in the given array, otherwise give -1;
+    int idx = jump_search(arr, len, key);
+    if(idx == -1)
+        cout << "key value is not present in the array::" << endl;
+    else
+        cout << "key value is present at index " << idx << endl;
+    return 0;
+}
