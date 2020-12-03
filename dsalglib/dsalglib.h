@@ -17,4 +17,7 @@
 #include "include/heap.h"
 #include "include/graph.h"
 
+#include "include/Number_Theory_Algorithms/fundamental_functions.h"
+#include "include/Number_Theory_Algorithms/prime_numbers.h"
+
 #endif //DSALGLIB_DSALGLIB_H
