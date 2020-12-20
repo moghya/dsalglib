@@ -3,6 +3,7 @@
 #include "array.h"
 namespace dsa
 {
+    // Addition of Matrices
     template<typename type>
     array< array<type> > matrix_add(array< array<type> > arr1,array< array<type> > arr2)
     {
@@ -20,6 +21,7 @@ namespace dsa
         return re;
     }
 
+    // Subtraction of Matrices
     template<typename type>
     array< array<type> > matrix_sub(array< array<type> > arr1,array< array<type> > arr2)
     {
@@ -36,6 +38,7 @@ namespace dsa
         return re;
     }
 
+    // Muliplying Matrices of same size
     template<typename type>
     array< array<type> > matrix_multwo(array< array<type> > arr1,array< array<type> > arr2)
     {
@@ -52,6 +55,7 @@ namespace dsa
         return re;
     }
 
+    // Matrix Multiplication
     template<typename type>
     array< array<type> > matrix_mul(array< array<type> > arr1,array< array<type> > arr2)
     {
@@ -72,6 +76,7 @@ namespace dsa
         return re;
     }
 
+    // Adding a constant to every element in Matrix
     template<typename type>
     array< array<type> > matrix_cons_add(array< array<type> > arr, type par)
     {
@@ -89,6 +94,7 @@ namespace dsa
         return re;
     } 
 
+    // Subtracting constant from every element of Matrix 
     template<typename type>
     array< array<type> > matrix_cons_sub(array< array<type> > arr, type par)
     {
@@ -105,6 +111,7 @@ namespace dsa
         return re;
     }
 
+    // Multiplying constant to every element of Matrix
     template<typename type>
     array< array<type> > matrix_cons_mul(array< array<type> > arr, type par)
     {
@@ -121,6 +128,7 @@ namespace dsa
         return re;
     }
 
+    // Dividing every element of Matrix by constant
     template<typename type>
     array< array<float> > matrix_cons_div(array< array<type> > arr, float par)
     {
@@ -137,6 +145,7 @@ namespace dsa
         return re;
     }
 
+    // reciprocal of every element in the matrix
     template<typename type>
     array< array<float> > matrix_oneby(array< array<type> > arr)
     {
@@ -154,6 +163,7 @@ namespace dsa
         return re;
     }
 
+    // get the transpose of Matrix
     template<typename type>
     array< array<type> > matrix_transpose(array< array<type> > arr)
     {
@@ -170,6 +180,7 @@ namespace dsa
         return re;
     }
 
+    // get the submatrix by giving top-left and bottom-right indices
     template<typename type>
     array< array<type> > submatrix(array< array<type> > arr, long long int i1, long long int j1, long long int i2, long long int j2)
     {
@@ -190,6 +201,7 @@ namespace dsa
         return re;
     }
 
+    // get the Matrix initialised with 0's
     array< array<int> > matrix_zeros(long long int n, long long int m)
     {
         array< array<int> > re(n);
@@ -198,6 +210,7 @@ namespace dsa
         return re;
     }
 
+    // get the Matrix initialised with 1's
     array< array<int> > matrix_ones(long long int n, long long int m)
     {
         array<int>a(m);
@@ -209,6 +222,7 @@ namespace dsa
         return re;
     }
 
+    // get the Matrix where every element is raised to power
     template<typename type>
     array< array<type> > matrix_powerby(array< array<type> > arr, int par)
     {
@@ -221,6 +235,7 @@ namespace dsa
         return re;
     }
 
+    // get the Identity Matrix initialised with size
     array< array<int> > matrix_identity(long long int m)
     {
         array< array<int> > re(m);
@@ -241,6 +256,7 @@ namespace dsa
         return re;
     }
 
+    // calculating Co-factors where this is used to find determinant and adjoint of Matrix
     template<typename type>
     void getCofactor(array< array<type> > arr, array< array<type> > cotemp, int p, int q, long long int n)
     {
@@ -262,10 +278,11 @@ namespace dsa
         }
     }
 
+    // Calculates the determinant of matrix
     template<typename type>
     long long int matrix_det(array< array<type> > arr, long long int n)
     {
-        int D = 0;
+        long long int D = 0;
         if (n == 1)
         return arr[0][0];
         array<type>a(n);
@@ -282,6 +299,7 @@ namespace dsa
         return D;
     }
 
+    // gets the Adjoint Matrix
     template<typename type>
     array< array<type> > matrix_adjoint(array< array<type> >arr)
     {
@@ -314,6 +332,7 @@ namespace dsa
         return adj;
     }
 
+    // get the Inverse of a Matrix
     template<typename type>
     array< array<float> > matrix_inverse(array< array<type> > arr)
     {
@@ -334,6 +353,54 @@ namespace dsa
             for (int j=0; j<N; j++) 
                 re[i][j] = adj[i][j]/float(det); 
         return re; 
+    }
+
+    // convert to upper triangular Matrix
+    template<typename type>
+    array< array<type> > matrix_upper(array< array<type> > arr)
+    {
+        long long int n = arr.size(), m = arr[0].size();
+        array< array<type> >re(n);
+        for(int i=0;i<n;i++)
+        {
+            re[i]=array<type>(m);
+            for(int j=0;j<m;j++)
+            {
+                if(i>j)
+                {
+                    re[i][j]=0;
+                }
+                else
+                {
+                    re[i][j]=arr[i][j];
+                }
+            }
+        }
+        return re;
+    }
+
+    // convert to lower triangular matrix
+    template<typename type>
+    array< array<type> > matrix_lower(array< array<type> > arr)
+    {
+        long long int n = arr.size(), m = arr[0].size();
+        array< array<type> >re(n);
+        for(int i=0;i<n;i++)
+        {
+            re[i]=array<type>(m);
+            for(int j=0;j<m;j++)
+            {
+                if(j>i)
+                {
+                    re[i][j]=0;
+                }
+                else
+                {
+                    re[i][j]=arr[i][j];
+                }
+            }
+        }
+        return re;
     }
 
 }
