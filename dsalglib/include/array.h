@@ -26,9 +26,13 @@ namespace dsa
                     count = size;
                     capacity=size+spare;
                     objs = new type[capacity];
+                    if(!objs)
+                    	throw "Memory allocation failed";
+                    else {
                     long long int i;
-                    for(i=0;i<count;i++)
-                        objs[i]=param;
+		                for(i=0;i<count;i++)
+		                    objs[i]=param;
+                    }
                 }
 
 
@@ -38,6 +42,11 @@ namespace dsa
 
                     type *old = objs;
                     objs = new type[newsize];
+                    
+                    if(!objs) {
+                    	throw "Memory allocation failed";
+                    	return;
+                    }
 
                     long long int temp;
                     for(temp=0;temp<count;temp++)
@@ -125,6 +134,8 @@ namespace dsa
                     count = 0;
                     capacity = spare;
                     objs = new type[capacity];
+                    if(!objs)
+                    	throw "Memory allocation failed";
                 }
         };
 }

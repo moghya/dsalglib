@@ -249,4 +249,29 @@ void trie_test(){
     cout << t.search("third") << "\n";
 }
 
+void num_theory_functions_test() {
+	cout << binaryExponentiation(4, 3) << "\n";
+	cout << binaryExponentiation(0, 4) << "\n";
+	cout << binaryExponentiation(5, 0) << "\n";
+	
+	const long long mod = 1e9 + 7;
+	long long a = 2, b = 1e9;
+	cout << modularBinaryExponentiation(a, b, mod) << "\n";
+}
+
+void num_theory_primes_test() {
+	cout << isNumPrime(7) << "\n";
+	cout << isNumPrime(1) << "\n";
+	cout << isNumPrime(1299653) << "\n";
+	
+	try {
+		array<bool> is_prime = sieve(100);
+		for(int i = 0; i < 100; i++)
+			if(is_prime[i])
+				cout << i << " ";
+	} catch(const char* exception) {
+		cout << exception << "\n";
+	}
+}
+
 #endif //DSALGLIB_TESTS_H
