@@ -16,5 +16,6 @@
 #include "include/tree.h"
 #include "include/heap.h"
 #include "include/graph.h"
+#include "include/matrix.h"
 
 #endif //DSALGLIB_DSALGLIB_H
