@@ -17,6 +17,7 @@ set(SOURCE_FILES
     include/kmpsearch.h
     include/linklist.h
     include/matrix.h
+    include/memory/unique_ptr.h
     include/mergesort.h
     include/queue.h
     include/quicksort.h
