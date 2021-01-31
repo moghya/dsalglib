@@ -17,6 +17,7 @@ set(SOURCE_FILES
     include/kmpsearch.h
     include/linklist.h
     include/matrix.h
+    include/memory/unique_ptr.h
     include/mergesort.h
     include/queue.h
     include/quicksort.h
@@ -31,6 +32,6 @@ set(SOURCE_FILES
     main.cpp
     sample.h
     tests.h
-    timepass.h include/hashmap.cpp include/hashmap.h)
+    include/hashmap.cpp include/hashmap.h)
 
 add_executable(dsalglib ${SOURCE_FILES})

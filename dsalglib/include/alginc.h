@@ -9,16 +9,49 @@
  * contains fundamental functions required
  */
 
+
+#define STR_DETAIL(x) #x
+#define STR(x) STR_DETAIL(x)
+
+#if defined(DEBUG)
+#define EXPECTS(cond) if (!(cond))\
+throw ("Precondition failure at " __FILE__ ":"\
+                         STR(__LINE__));
+#else
+#define EXPECTS(cond)
+#endif
+
 namespace dsa
 {
+
+    template <class T>
+    struct remove_reference {
+        using type = T;
+    };
+    template <class T>
+    struct remove_reference<T&> {
+        using type = T;
+    };
+    template <class T>
+    struct remove_reference<T&&> {
+        using type = T;
+    };
+
+    // Analogue of std::move
+    template <class T>
+    typename remove_reference<T>::type&&
+    rvalue_cast(T&& t) noexcept
+    {
+        return static_cast<typename remove_reference<T>::type&&>(t);
+    }
 
 
     template<typename T>
     inline void swapit(T &x, T &y)
     {
-        T t = x;
-        x = y;
-        y = t;
+        T t = rvalue_cast(x);
+        x = rvalue_cast(y);
+        y = rvalue_cast(t);
     }
 
     template<typename T>
@@ -35,6 +68,18 @@ namespace dsa
         T min;
         min = (x < y) ? x : y;
         return min;
+    }
+
+    // Analogue of std::forward.
+    template<class T>
+    T&& forward(typename remove_reference<T>::type& t) noexcept
+    {
+        return static_cast<T&&>(t);
+    }
+    template<class T>
+    T&& forward(typename remove_reference<T>::type&& t) noexcept
+    {
+        return static_cast<T&&>(t);
     }
 
 }
