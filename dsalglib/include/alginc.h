@@ -9,6 +9,18 @@
  * contains fundamental functions required
  */
 
+
+#define STR_DETAIL(x) #x
+#define STR(x) STR_DETAIL(x)
+
+#if defined(DEBUG)
+#define EXPECTS(cond) if (!(cond))\
+throw ("Precondition failure at " __FILE__ ":"\
+                         STR(__LINE__));
+#else
+#define EXPECTS(cond)
+#endif
+
 namespace dsa
 {
 

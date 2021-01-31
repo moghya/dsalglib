@@ -32,6 +32,6 @@ set(SOURCE_FILES
     main.cpp
     sample.h
     tests.h
-    timepass.h include/hashmap.cpp include/hashmap.h)
+    include/hashmap.cpp include/hashmap.h)
 
 add_executable(dsalglib ${SOURCE_FILES})

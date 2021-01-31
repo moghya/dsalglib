@@ -7,6 +7,10 @@
 #include <iostream>
 #include "dsalglib.h"
 #include "sample.h"
+
+#define ASSERT(cond) if (!(cond))\
+    throw ("Assertion failed at " __FILE__ ":" STR(__LINE__));
+
 using namespace std;
 using namespace dsa;
 
@@ -247,6 +251,47 @@ void trie_test(){
     cout << t.search("firs") << "\n";
     cout << t.search("second") << "\n";
     cout << t.search("third") << "\n";
+}
+
+void reversalTreeTest() {
+    const int numbers[] = {2, 3, 4, 5, 6, 7, 8};
+    const int n = sizeof(numbers) / sizeof(int);
+    ReversalTree<int> tree(numbers, numbers + n);
+    ASSERT(tree.at(0) == 2);
+    ASSERT(tree.at(5) == 7);
+
+    tree.reverse(2, 5);
+    tree.reverse(0, 4);
+    {
+        const int expected[] = {5, 6, 3, 2, 4, 7, 8};
+        ASSERT(tree.size() == n);
+        auto it = tree.cbegin();
+        for (int i = 0; i < n; ++i, ++it) {
+            ASSERT(*it == expected[i]);
+        }
+        ASSERT(it == tree.cend());
+    }
+
+    tree.erase(--tree.end());
+    tree.insert(tree.begin(), 1);
+    ASSERT(tree.front() == 1);
+    ASSERT(tree.back() == 7);
+    ASSERT(tree.size() == n);
+    // {1, 5, 6, 3, 2, 4, 7}
+
+    ReversalTree<int>::iterator mid = advance(tree.begin(), n / 2);
+    ReversalTree<int> other = tree.split(mid);
+    other.merge(rvalue_cast(tree));
+    {
+        const int expected[] = {3, 2, 4, 7, 1, 5, 6};
+        ASSERT(other.size() == n);
+        auto it = other.cbegin();
+        for (int i = 0; i < n; ++i, ++it) {
+            ASSERT(*it == expected[i]);
+        }
+    }
+    ASSERT(tree.empty());
+    tree.clear();
 }
 
 #endif //DSALGLIB_TESTS_H

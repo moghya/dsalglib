@@ -13,6 +13,7 @@
 #include "include/search.h"
 #include "include/sort.h"
 #include "include/queue.h"
+#include "include/reversaltree.h"
 #include "include/tree.h"
 #include "include/heap.h"
 #include "include/graph.h"
