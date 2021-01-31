@@ -5,19 +5,14 @@
 #ifndef DSALGLIB_REVERSALTREE_H
 #define DSALGLIB_REVERSALTREE_H
 
-#include <stdint.h>
-#include <string>
-#include <array>
-#include <memory>
-#include <iterator>
-#include <type_traits>
+#include "memory/unique_ptr.h"
 
 
 #define STR_DETAIL(x) #x
 #define STR(x) STR_DETAIL(x)
 #if defined(DEBUG)
 #define EXPECTS(cond) if (!(cond))\
-throw std::runtime_error("Precondition failure at " __FILE__ ":"\
+throw ("Precondition failure at " __FILE__ ":"\
                          STR(__LINE__));
 #else
 #define EXPECTS(cond)
@@ -25,31 +20,46 @@ throw std::runtime_error("Precondition failure at " __FILE__ ":"\
 
 namespace dsa {
 
-template <class T, class... Ts>
-std::unique_ptr<T> make_unique(Ts&&... ts) {
-    return std::unique_ptr<T>(new T(std::forward<Ts&&>(ts)...));
-}
+using size_t = unsigned int;
 
 template<class T, class U = T>
 T exchange(T& obj, U&& new_value)
 {
-    T old_value = std::move(obj);
-    obj = std::forward<U>(new_value);
+    T old_value = rvalue_cast(obj);
+    obj = forward<U>(new_value);
     return old_value;
 }
 
 template<bool B, class T, class F>
 struct conditional {
-    typedef T type;
+    using type = T;
 };
 
 template<class T, class F>
 struct conditional<false, T, F> {
-    typedef F type;
+    using type = F;
 };
 
 template <bool B, class T, class F>
 using conditional_t = typename conditional<B, T, F>::type;
+
+template <class ForwardIterator>
+size_t iterator_distance(ForwardIterator first, ForwardIterator last) {
+    size_t result = 0;
+    while (first != last) {
+        ++first;
+        ++result;
+    }
+    return result;
+}
+
+template <class ForwardIterator>
+ForwardIterator advance(ForwardIterator it, size_t steps) {
+    for (size_t i = 0; i < steps; ++i) {
+        ++it;
+    }
+    return it;
+}
 
 template <class T>
 class ReversalTree {
@@ -58,15 +68,13 @@ class ReversalTree {
         class Iterator;
 
         using value_type = T;
-        using size_type = std::size_t;
+        using size_type = size_t;
         using reference = value_type&;
         using const_reference = const value_type&;
         using pointer = value_type*;
         using const_pointer = const value_type*;
         using iterator = Iterator<false>;
         using const_iterator = Iterator<true>;
-        using reverse_iterator = std::reverse_iterator<iterator>;
-        using const_reverse_iterator = std::reverse_iterator<const_iterator>;
 
     private:
         class Node;
@@ -79,14 +87,11 @@ class ReversalTree {
         template <class ForwardIterator>
         ReversalTree(ForwardIterator begin, ForwardIterator end);
 
-        ReversalTree(std::initializer_list<T> ilist) : ReversalTree(ilist.begin(),
-                                                              ilist.end()) {}
-
         ReversalTree& operator=(const ReversalTree&) = delete;
         ReversalTree& operator=(ReversalTree&&);
 
         bool empty() const noexcept {
-            return !dummy_.son_[0];
+            return !root_ptr();
         }
 
         size_type size() const noexcept {
@@ -146,16 +151,13 @@ class ReversalTree {
         const_iterator end() const;
         const_iterator cend() const;
 
-        reverse_iterator rbegin();
-        const_reverse_iterator rbegin() const;
-        const_reverse_iterator crbegin() const;
-        reverse_iterator rend();
-        const_reverse_iterator rend() const;
-        const_reverse_iterator crend() const;
-
     private:
         Node& root() const {
             return *(dummy_.son_[0]);
+        }
+
+        unique_ptr<Node>& root_ptr() const {
+            return dummy_.son_[0];
         }
 
         bool isRoot(const Node& node) const {
@@ -163,7 +165,9 @@ class ReversalTree {
         }
 
         template <class ForwardIterator>
-        std::unique_ptr<Node> buildTree(ForwardIterator, ForwardIterator);
+        unique_ptr<Node> buildTree(ForwardIterator, ForwardIterator);
+        template <class ForwardIterator>
+        unique_ptr<Node> buildTree(ForwardIterator, ForwardIterator, size_t dist);
 
         void rotate(Node&);
 
@@ -181,7 +185,7 @@ class ReversalTree {
 template <class T>
 class ReversalTree<T>::Node {
     public:
-        explicit Node(T data = T()) : data_(std::move(data)) {
+        explicit Node(T data = T()) : data_(rvalue_cast(data)) {
             dad_ = this;
         }
         Node(const Node&) = delete;
@@ -205,9 +209,8 @@ class ReversalTree<T>::Node {
         }
 
         void push() {
-            using std::swap;
             if (reverse_) {
-                swap(son_[0], son_[1]);
+                swapit(son_[0], son_[1]);
                 for (bool dir : {0, 1}) {
                     if (son_[dir]) {
                         son_[dir]->reverse_ ^= 1;
@@ -217,8 +220,8 @@ class ReversalTree<T>::Node {
             }
         }
 
-        void link(std::unique_ptr<Node>&& son, bool dir) {
-            son_[dir] = std::move(son);
+        void link(unique_ptr<Node>&& son, bool dir) {
+            son_[dir] = rvalue_cast(son);
             if (son_[dir]) {
                 son_[dir]->dad_ = this;
             }
@@ -227,7 +230,7 @@ class ReversalTree<T>::Node {
 
     public:
         T data_;
-        std::array<std::unique_ptr<Node>, 2> son_;
+        unique_ptr<Node> son_[2];
         Node* dad_;
         typename ReversalTree<T>::size_type subtree_size_ = 1;
         bool reverse_ = false;
@@ -235,13 +238,10 @@ class ReversalTree<T>::Node {
 
 template <class T>
 template <bool IsConst>
-class ReversalTree<T>::Iterator :
-        public std::iterator<std::forward_iterator_tag, T> {
+class ReversalTree<T>::Iterator {
     friend class ReversalTree<T>;
     public:
-        using iterator_category = std::forward_iterator_tag;
         using value_type = ReversalTree::value_type;
-        // using difference_type = std::allocator<T>::difference_type;
         using reference = conditional_t<IsConst,
                                              ReversalTree::const_reference,
                                              ReversalTree::reference>;
@@ -320,38 +320,47 @@ ReversalTree<T>::ReversalTree(ForwardIterator begin, ForwardIterator end) {
 
 template <class T>
 template <class ForwardIterator>
-auto ReversalTree<T>::buildTree(ForwardIterator begin,
-                             ForwardIterator end) -> std::unique_ptr<Node> {
-    const auto dist = std::distance(begin, end);
+auto ReversalTree<T>::buildTree(
+    ForwardIterator begin,
+    ForwardIterator end,
+    size_t dist
+) -> unique_ptr<Node> {
     if (dist == 0) {
         return nullptr;
     }
     if (dist == 1) {
         return make_unique<Node>(*begin);
     }
-    auto mid = begin;
-    std::advance(mid, dist / 2);
+    const auto mid_pos = dist / 2;
+    auto mid = advance(begin, mid_pos);
     auto result = make_unique<Node>(*mid);
-    result->link(buildTree(begin, mid), 0);
-    result->link(buildTree(++mid, end), 1);
+    result->link(buildTree(begin, mid, mid_pos), 0);
+    result->link(buildTree(++mid, end, dist - mid_pos - 1), 1);
     return result;
+}
+template <class T>
+template <class ForwardIterator>
+auto ReversalTree<T>::buildTree(
+    ForwardIterator begin,
+    ForwardIterator end
+) -> unique_ptr<Node> {
+    return buildTree(begin, end, iterator_distance(begin, end));
 }
 
 template <class T>
 void ReversalTree<T>::clear() {
-    dummy_.son_[0] = nullptr;
+    root_ptr() = nullptr;
     dummy_.updateSubtreeSize();
 }
 
 template <class T>
 void ReversalTree<T>::swap(ReversalTree<T>& rhs) noexcept {
-    using std::swap;
-    swap(rhs.dummy_.son_[0], dummy_.son_[0]);
-    if (dummy_.son_[0]) {
-        dummy_.son_[0]->dad_ = &dummy_;
+    swapit(rhs.root_ptr(), root_ptr());
+    if (root_ptr()) {
+        root_ptr()->dad_ = &dummy_;
     }
-    if (rhs.dummy_.son_[0]) {
-        rhs.dummy_.son_[0]->dad_ = &rhs.dummy_;
+    if (rhs.root_ptr()) {
+        rhs.root_ptr()->dad_ = &rhs.dummy_;
     }
     dummy_.updateSubtreeSize();
     rhs.dummy_.updateSubtreeSize();
@@ -360,7 +369,7 @@ void ReversalTree<T>::swap(ReversalTree<T>& rhs) noexcept {
 template <class T>
 void ReversalTree<T>::rotate(Node& u) {
     if (&u == &dummy_ || isRoot(u)) {
-        throw std::runtime_error("Attempt to rotate root");
+        throw ("Attempt to rotate root");
     }
     Node& v = *u.dad_;
     Node& w = *v.dad_;
@@ -407,7 +416,7 @@ void ReversalTree<T>::splay(Node& u) {
 template <class T>
 auto ReversalTree<T>::findNode(size_type i) const -> Node& {
     size_type cumulated = 0;
-    Node* p = &root();
+    Node* p = root_ptr().get();
     while (true) {
         p->push();
         const size_type index = cumulated + p->leftSubtreeSize();
@@ -426,9 +435,7 @@ auto ReversalTree<T>::findNode(size_type i) const -> Node& {
 template <class T>
 auto ReversalTree<T>::at(size_type i) -> reference {
     if (i >= size()) {
-        throw std::out_of_range(std::string("Index ") + std::to_string(i) +
-                                " is greater than size() which is " +
-                                std::to_string(size()));
+        throw "at(): index out of range";
     }
     splay(findNode(i));
     return root().data_;
@@ -437,9 +444,7 @@ auto ReversalTree<T>::at(size_type i) -> reference {
 template <class T>
 auto ReversalTree<T>::at(size_type i) const -> const_reference {
     if (i >= size()) {
-        throw std::out_of_range(std::string("Index ") + std::to_string(i) +
-                                " is greater than size() which is " +
-                                std::to_string(size()));
+        throw "at(): index out of range";
     }
     return findNode(i).data_;
 }
@@ -454,12 +459,12 @@ ReversalTree<T> ReversalTree<T>::split(const_iterator it) {
     auto prev = it;
     try {
         --prev;
-    } catch (std::runtime_error) {
-        return std::move(*this);
+    } catch (...) {
+        return rvalue_cast(*this);
     }
     splay(*prev.node_);
     ReversalTree<T> result;
-    result.dummy_.link(std::move(root().son_[1]), 0);
+    result.dummy_.link(rvalue_cast(root().son_[1]), 0);
     root().updateSubtreeSize();
     return result;
 }
@@ -474,7 +479,7 @@ void ReversalTree<T>::merge(ReversalTree<T>&& rhs) {
         return;
     }
     splay(findNode(size() - 1));
-    root().link(std::move(rhs.dummy_.son_[0]), 1);
+    root().link(rvalue_cast(rhs.dummy_.son_[0]), 1);
 }
 
 template <class T>
@@ -491,35 +496,30 @@ void ReversalTree<T>::reverse(size_type first, size_type last) {
         return;
     }
     if (first > last) {
-        throw std::runtime_error(std::string("Invalid range: [") +
-                                 std::to_string(first) +
-                                 ", " + std::to_string(last) + ")");
+        throw "reverse(): first is greater than last";
     }
     if (last > size()) {
-        throw std::out_of_range(std::string("last index is ") +
-                                std::to_string(last) +
-                                " which is greater than size() which is " +
-                                std::to_string(size()));
+        throw "reverse(): last is greater than size";
     }
     auto right = split(last);
     auto center = split(first);
     center.reverseTree();
-    merge(std::move(center));
-    merge(std::move(right));
+    merge(rvalue_cast(center));
+    merge(rvalue_cast(right));
 }
 
 template <class T>
 auto ReversalTree<T>::insert(const_iterator it, T e) -> iterator {
     Node* new_node = nullptr;
     if (!it.node_->son_[0]) {
-        it.node_->link(make_unique<Node>(std::move(e)), 0);
+        it.node_->link(make_unique<Node>(rvalue_cast(e)), 0);
         new_node = it.node_->son_[0].get();
     } else {
         Node* p = it.node_->son_[0].get();
         while (p->son_[1]) {
             p = p->son_[1].get();
         }
-        p->link(make_unique<Node>(std::move(e)), 1);
+        p->link(make_unique<Node>(rvalue_cast(e)), 1);
         new_node = p->son_[1].get();
     }
     splay(*new_node);
@@ -537,7 +537,7 @@ auto ReversalTree<T>::erase(const_iterator first,
                          const_iterator last) -> iterator {
     auto right = split(last);
     split(first);
-    merge(std::move(right));
+    merge(rvalue_cast(right));
     if (empty() || !root().son_[1]) {
         return end();
     } else {
@@ -584,43 +584,13 @@ auto ReversalTree<T>::cend() const -> const_iterator {
     return end();
 }
 
-template <class T>
-auto ReversalTree<T>::rbegin() -> reverse_iterator {
-    return reverse_iterator(end());
-}
-
-template <class T>
-auto ReversalTree<T>::rbegin() const -> const_reverse_iterator {
-    return const_reverse_iterator(end());
-}
-
-template <class T>
-auto ReversalTree<T>::crbegin() const -> const_reverse_iterator {
-    return const_reverse_iterator(end());
-}
-
-template <class T>
-auto ReversalTree<T>::rend() -> reverse_iterator {
-    return reverse_iterator(begin());
-}
-
-template <class T>
-auto ReversalTree<T>::rend() const -> const_reverse_iterator {
-    return const_reverse_iterator(begin());
-}
-
-template <class T>
-auto ReversalTree<T>::crend() const -> const_reverse_iterator {
-    return const_reverse_iterator(begin());
-}
-
 
 template <class T>
 template <bool IsConst>
-ReversalTree<T>::Iterator<IsConst>&
+typename ReversalTree<T>::template Iterator<IsConst>&
 ReversalTree<T>::Iterator<IsConst>::operator++() {
     if (node_->dad_ == node_) {
-        throw std::runtime_error("Calling operator++ for end iterator");
+        throw ("Calling operator++ for end iterator");
     }
     node_->push();
     if (node_->son_[1]) {
@@ -641,7 +611,7 @@ ReversalTree<T>::Iterator<IsConst>::operator++() {
 
 template <class T>
 template <bool IsConst>
-ReversalTree<T>::Iterator<IsConst>&
+typename ReversalTree<T>::template Iterator<IsConst>&
 ReversalTree<T>::Iterator<IsConst>::operator--() {
     node_->push();
     if (node_->son_[0]) {
@@ -655,8 +625,7 @@ ReversalTree<T>::Iterator<IsConst>::operator--() {
         while (!node_->whichSon()) {
             node_ = node_->dad_;
             if (node_->dad_ == node_) {
-                throw std::runtime_error(
-                        "Calling operator-- for begin iterator");
+                throw ("Calling operator-- for begin iterator");
             }
         }
         node_ = node_->dad_;
